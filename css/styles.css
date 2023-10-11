@@ -27,6 +27,10 @@ body {
 
 /* Nav */
 
+nav {
+    position:absolute;
+}
+
 .container {
     max-width: 1920;
     margin:auto;
@@ -36,8 +40,44 @@ body {
 }
 
 header {
-    position:fixed;
+    position:relative;
     top:0;
     left:0;
     width:100%;
 }
+
+.logo img {
+    width: 90px;
+    height: auto;
+}
+
+/*Mobile*/
+
+nav,
+#menu-checkbox {
+    display:none;
+}
+
+#menu-checkbox:checked ~ nav {
+    display:block;
+}
+
+nav a {
+    display:block;
+    text-decoration: none;
+    color:#212121
+}
+
+@media (min-width: 600px) {
+    nav {
+        display:block;
+        position:static;
+    }
+    .hamburger-icon {
+        display:none;
+    }
+    nav a {
+        display:inline;
+    }
+}
+

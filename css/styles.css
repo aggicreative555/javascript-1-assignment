@@ -81,3 +81,14 @@ nav a {
     }
 }
 
+/* Game Image Styling */
+
+.game-list {
+    display: inline;
+}
+
+.game-image {
+    width: 363px;
+    height: auto;
+    border-radius: 12px;
+}

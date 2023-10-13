@@ -11,8 +11,82 @@
     <link rel="icon" href="/assets/favicon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png"><!-- 180×180 -->
     <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    
 
     <!--CSS-->
     <link rel="stylesheet" href="/css/styles.css">
 
-    <!--Microsoft Fluent Icons-->
+    <!--Microsoft Fluent Icons-->    <!--Font Awesome Icons-->
+    <script src="https://kit.fontawesome.com/6ef3e8b9dc.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <!--Nav-->
+        <div class="nav container">
+            <div class="logo">
+              <a href="/index.html">
+                  <img src="/assets/logo/GameHub_Logo.png" alt="GameHub Logo">
+              </a>
+            </div>
+          <input type="checkbox" id="menu-checkbox">
+          <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars"></i></label>
+          <nav>
+            <a href="/products/products.html">Shop</a>
+            <a href="/about-us/about-us.html">About Us</a>
+            <a href="#">Search</a>
+          </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1>Contact Us</h1>
+            <div class="button L">
+                <h3>Customer Support</h3>
+
+            </div>
+            <div class="button L">
+                <h3>FAQ</h3>
+            </div>
+        </section>
+        <div class="form-container">
+            <form action="#" method="GET">
+                <h3>Contact Form</h3>
+                <p class="caption">* Required Fields</p>
+                <fieldset class="topics">
+                    <label for="main topic">Main Topic</label>
+                    <select name="main topic" id="main topic">
+                        <option value="Returns">Returns</option>
+                        <option value="Returns">Returns</option>
+                        <option value="Returns">Returns</option>
+                        <option value="Returns">Returns</option>
+                    </select>
+                    <label for="subject">Subject</label>
+                    <input list="subjects" id="subject" name="subject" />
+
+                    <datalist id="subjects">
+                        <option value="Shipping Time"></option>
+                        <option value="Returns Payback Time"></option>
+                        <option value="Order Arrival Time"></option>
+                        <option value="Damaged package"></option>
+                    </datalist>
+                </fieldset>
+                <fieldset class="personal-info">
+                    <label for="name-surname">*Full Name</label>
+                    <input type="text" id="name-surname" name="name-surname" minlength="5" maxlength="20" required title="Please write your full name, 5-20 characters">
+                    <label for="email">*Email</label>
+                    <input type="email" id="email" name="email" required title="
+                    Please write an email addres under these domains: @gmail.com, @hotmail.com or @outlook.com" pattern="^\w+@(gmail\.com|hotmail\.com|outlook\.com)$">
+                </fieldset>
+                <fieldset>
+                    <label for="message">*Message</label>
+                    <textarea id="message" name="message" required title="Please write a message."></textarea>
+                </fieldset>
+                <button type="submit" class="cta submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>

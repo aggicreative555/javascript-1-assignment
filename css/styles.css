@@ -92,3 +92,25 @@ nav a {
     height: auto;
     border-radius: 12px;
 }
+
+/*Contact Us*/
+
+/*Form*/
+form {
+    display:block;
+    width:500px;
+}
+
+label, input, textarea {
+    display:block;
+    width:100%;
+    margin-bottom:10px;
+}
+
+fieldset {
+    margin:0 auto;
+}
+
+.form-container{
+    width: 1306px;
+}

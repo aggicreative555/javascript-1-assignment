@@ -114,3 +114,33 @@ fieldset {
 .form-container{
     width: 1306px;
 }
+
+/*Products Page*/
+
+.breadcrumb-item + .breadcrumb-item :before {
+    content:"/"; 
+}
+
+.breadcrumb-item {
+    display: inline-block;
+}
+
+.breadcrumb {
+    list-style: none;
+}
+
+.filter-results {
+    text-align: center;
+    line-height: 2em;
+}
+
+.buttons-inline {
+    display:inline;
+    padding:24px;
+    padding-left:0;
+}
+
+.product-image img {
+    height: auto;
+    width: 90px;
+}

@@ -28,7 +28,7 @@ body {
 /* Nav */
 
 nav {
-    position:absolute;
+    position:fixed;
 }
 
 .container {

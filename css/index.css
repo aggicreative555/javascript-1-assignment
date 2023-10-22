@@ -103,3 +103,11 @@ header .logo {
 }
 
 
+header search input {
+    text-align: left;
+    padding: 0.5rem; 
+    font-weight: 100;
+    outline: none;
+}
+
+

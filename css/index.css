@@ -50,3 +50,38 @@ header a {
     margin: 1rem;
     white-space: nowrap;
 }
+
+#main-nav {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+summary a {
+    padding:0rem;
+    margin:0rem;
+}
+
+header .logo {
+    max-width: 5.625rem;
+    min-width: 5.625rem;
+    margin:1rem;
+    padding:1rem;
+    flex: 1;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo a {
+    max-width: 100%;
+}
+
+.logo {
+    max-width min-width: 200px;
+    height: auto;
+}
+
+

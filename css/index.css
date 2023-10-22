@@ -85,3 +85,21 @@ header .logo {
 }
 
 
+/* Buttons */
+
+.btn-cta {
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: var(--primary-color);
+}
+
+.btn-cta a {
+    color: var(--UI-white);
+    text-align: center;
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+

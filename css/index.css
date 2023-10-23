@@ -2,7 +2,6 @@
 @import url(/css/styles.css);
 
 *,*:before,*:after{
-    box-sizing:inherit
 }
 
 *{
@@ -62,28 +61,14 @@ summary a {
     margin:0rem;
 }
 
-header .logo {
-    max-width: 5.625rem;
-    min-width: 5.625rem;
-    margin:1rem;
-    padding:1rem;
-    flex: 1;
 }
 
 .logo img {
-    max-width: 100%;
-    height: auto;
 }
 
 .logo a {
     max-width: 100%;
 }
-
-.logo {
-    max-width min-width: 200px;
-    height: auto;
-}
-
 
 /* Buttons */
 
@@ -102,12 +87,6 @@ header .logo {
     font-weight: 500;
 }
 
-
-header search input {
-    text-align: left;
-    padding: 0.5rem; 
-    font-weight: 100;
-    outline: none;
 }
 
 

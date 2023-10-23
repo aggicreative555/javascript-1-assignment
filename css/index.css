@@ -91,7 +91,11 @@ header search input {
     outline: none;
 }
 
+/* Logo */
+
 .logo img {
+    max-width: 5rem;
+    max-width: 5rem;
 }
 
 .logo a {

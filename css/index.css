@@ -2,6 +2,7 @@
 @import url(/css/styles.css);
 
 *,*:before,*:after{
+    box-sizing:inherit;
 }
 
 *{
@@ -20,6 +21,7 @@
 
 
 :root {
+
     /*Colors*/
     --primary-color: #1B203D;
     --secondary-color: #6269AD;
@@ -33,14 +35,30 @@
     /*Spacing*/
 
 
+/* Header & Nav */
+
 header {
     display:flex;
     justify-content: space-between;
     align-items: center;
+    /* position: absolute; */
     color:#212121;
     background: var(--UI-white);
     padding: 1rem;
 }
+
+.header-left, .header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin:0;
+    padding:0;
+}
+
+.header-right {
+    justify-content: flex-end;
+}
+
 
 header a {
     color:#212121;
@@ -54,6 +72,8 @@ header a {
     white-space: nowrap;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    position: relative;
 }
 
 summary a {

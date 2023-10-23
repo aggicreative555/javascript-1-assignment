@@ -14,7 +14,7 @@
 /*Contact Us*/
 
 /*Form*/
-form {
+.contact-form {
     display:block;
     width:500px;
 }
@@ -25,7 +25,7 @@ label, input, textarea {
     margin-bottom:10px;
 }
 
-fieldset {
+.form-container fieldset {
     margin:0 auto;
 }
 

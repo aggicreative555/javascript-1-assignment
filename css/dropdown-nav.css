@@ -1,3 +1,55 @@
+@import url(/css/index.css);
+@import url(/css/styles.css);
+
+
+.dropdown-menu {
+    position: relative;
+}
+
+.dropdown-menu nav {
+    position: absolute;
+    background: var(--UI-white);
+    width: 375px;
+    height: auto;
+}
+
+.nav-container {
+    padding: 2rem
+}
+
+.dropdown-title {
+    display:flex;
+    align-items: center;
+    justify-items: flex-start;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(main-text-color);
+    padding: 1rem 0 1rem 0;
+}
+
+.dropdown-title-menu {
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width:inherit;
+    padding:0.5rem 0 0.5rem 0;
+    box-shadow: 0px 2px 2px 0px rgba(160, 163, 231, 0.50);
+}
+
+.dropdown-console li {
+    display:block;
+    list-style:none;
+    margin:none;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.dropdown-console li a {
+    margin:0;
+    font-size:16px;
+    font-weight: medium;
+    color: var(--secondary-color);
+    
+}
 
 
 

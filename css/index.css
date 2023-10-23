@@ -119,7 +119,14 @@ header search input {
     font-weight: 500;
 }
 
+#close-menu-button {
+    outline:none;
+    background-color: transparent;
+    border:none;
+    padding:0.25rem;
 }
+
+
 
 
 body {

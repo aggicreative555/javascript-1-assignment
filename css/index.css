@@ -72,27 +72,9 @@ header a {
     white-space: nowrap;
 }
 
-#main-nav {
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    position: relative;
-}
-
 summary a {
     padding:0rem;
     margin:0rem;
-}
-
-
-header search input {
-    box-sizing: border-box;
-    text-align: left;
-    padding: 0.25rem; 
-    margin:none;
-    font-weight: 100;
-    outline: none;
 }
 
 /* Logo */

@@ -41,7 +41,7 @@ header {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    /* position: absolute; */
+    position: fixed relative;
     color:#212121;
     background: var(--UI-white);
     padding: 1rem;
@@ -57,6 +57,10 @@ header {
 
 .header-right {
     justify-content: flex-end;
+}
+
+.header-left {
+    justify-content: flex-start;
 }
 
 

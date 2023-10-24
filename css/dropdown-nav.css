@@ -20,9 +20,10 @@
 .dropdown-title {
     display:flex;
     align-items: center;
-    justify-items: flex-start;
-    font-size: 1rem;
-    font-weight: 500;
+    justify-items: space-between;
+    width:100%;
+    font-size: 1.25rem;
+    font-weight: bolder;
     color: var(main-text-color);
     padding: 1rem 0 1rem 0;
 }

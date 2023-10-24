@@ -132,6 +132,9 @@ header .cart-container {
 
 /* Desktop */
 
+header .show-on-desktop, .search-container {
+    display:none;
+}
 
 
 body {
@@ -139,4 +142,51 @@ body {
     color: var(--main-text-color);
     background-color: var(--background-color);
     box-sizing:border-box;
+}
+
+@media screen and (min-width:1000px) {
+    header .show-on-desktop, #search {
+        display:block;
+    }
+
+    button .hamburger {
+        display:none;
+    }
+
+    header details {
+        cursor: pointer;
+    }
+
+    /* Search */
+
+    header .search-container {
+        display:block;
+        padding:0;
+        border-bottom:solid 0.16rem var(--secondary-color);
+    }
+
+    header form {
+        display:flex;
+        flex-direction: row;
+        height:3rem;
+        max-width: 12rem;
+    }
+
+    form #search {
+        padding: 0; 
+        margin:0;
+        border:0;
+    }
+
+    input::placeholder {
+        color: var(--secondary-color);
+        font-weight: 300;
+        font-size: 0.8rem;
+    }
+
+    button.search-btn {
+        margin:0.5rem;
+        padding:0.5rem;
+    }
+
 }

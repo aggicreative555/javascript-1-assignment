@@ -30,9 +30,9 @@
 
 .dropdown-title-menu {
     display:flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: flex-start;
-    width:inherit;
+    width:375px;
     padding:0.5rem 0 0.5rem 0;
     box-shadow: 0px 2px 2px 0px rgba(160, 163, 231, 0.50);
 }

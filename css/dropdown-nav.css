@@ -55,6 +55,15 @@
     
 }
 
+#subtitle-L-top { 
+    padding-left:2rem; 
+}
+
+#close-menu-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
 
 
 

@@ -10,7 +10,10 @@
     position: absolute;
     background: var(--UI-white);
     width: 375px;
-    height: auto;
+    height:1080px;
+    top:-1.25rem;
+    left: -13.5rem;
+    z-index: 999;
 }
 
 .nav-container {

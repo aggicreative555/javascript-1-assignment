@@ -20,12 +20,15 @@
     src: url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto&display=swap');
     padding: 0;
     margin: 0;
+    font-style: normal;
+    line-height: normal;
 }
 
 
 :root {
 
     /*Colors*/
+
     --primary-color: #1B203D;
     --secondary-color: #6269AD;
     --background-color:#F3F2FF;

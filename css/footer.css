@@ -45,3 +45,33 @@ footer .footer-links-section {
 }
 
 
+/* Links */
+
+footer .footer-links a {
+    text-decoration: none;
+    color: var(--primary-color, #1B203D);
+}
+
+footer .footer-links a + a::before {
+    content: " | "; 
+    padding: 0.25rem; 
+}
+
+footer .footer-links {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+    flex: 1 0 0;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+
+/* Copyright */
+footer .footer-copyright {
+    align-self: stretch;
+    color: var(--main-text-color, #212121);
+    font-size: 0.75rem;
+    font-weight: 100;
+}

@@ -11,3 +11,25 @@ footer .footer-top-container {
     background: var(--primary-color, #1B203D);
 }
 
+/* Logo */
+
+footer .footer-logo {
+    display: flex;
+    min-width: 7rem;
+    max-width: 7rem;
+    margin-bottom: 1rem;
+}
+
+footer .footer-logo img {
+    width:100%;
+}
+
+
+/* Social Media Icons */
+
+footer .footer-social-media-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+

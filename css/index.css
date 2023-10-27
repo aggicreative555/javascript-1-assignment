@@ -191,4 +191,25 @@ body {
         padding:0.5rem;
     }
 
+    /* PRODUCT CARD */
+
+    body .product-card-container {
+        display: flex;
+        width: 363px;
+        height: auto;
+    }
+    
+    body .product-card-image {
+        max-height:484px;
+        max-width:363px;
+        flex-shrink:0;
+    }
+
+    body .product-image {
+        min-height:484px;
+        width:363px;
+
+   
+    
+
 }

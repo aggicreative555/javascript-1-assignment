@@ -33,3 +33,15 @@ footer .footer-social-media-icons {
     gap: 1rem;
 }
 
+/* Bottom Section */
+
+footer .footer-links-section {
+    display: flex;
+    padding: 1.5rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    align-self: stretch;
+}
+
+

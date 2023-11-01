@@ -235,12 +235,27 @@ body .buttons-container {
     max-width: 1548px;
     width: 100%;
 }
+
+body .button-container-square {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height:171px;
+    min-width: 171px;
+    max-width:332px;
+    max-height:auto;
+    aspect-ratio: 1/1;
+    border:0;
+    border-radius:12px ;
     background-image: var(--category-bg,none);
     background-size: cover;
     background-position: center;
     background-repeat: none;
     cursor:pointer;
     box-shadow: var(--drop-shadow-card);
+}
 
 .button-container-square[data-category="horror"] {
     --category-bg: url(/assets/images/button_img/img_horror.jpg);

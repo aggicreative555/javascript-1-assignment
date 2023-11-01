@@ -154,6 +154,41 @@ button, .hamburger, .cart {
 }
 
 
+.button-container-square[data-category="horror"] {
+    --category-bg: url(/assets/images/button_img/img_horror.jpg);
+}
+
+.button-container-square[data-category="openworld"] {
+    --category-bg: url(/assets/images/button_img/img_openwolrd.jpg);
+}
+
+.button-container-square[data-category="simualtion"] {
+    --category-bg: url(/assets/images/button_img/img_simulation.jpg);
+}
+
+.button-container-square[data-category="visualnovel"] {
+    --category-bg: url(/assets/images/button_img/img_visualnovel.jpg);
+}
+
+.button-container-square[data-category="sport"] {
+    --category-bg: url(/assets/images/button_img/img_sports.jpg);
+}
+
+.button-container-square[data-category="racing"] {
+    --category-bg: url(/assets/images/button_img/img_racing.jpg);
+}
+
+.button-container-square[data-category="free"] {
+    --category-bg: url(/assets/images/button_img/img_free.jpg);
+}
+
+.button-container-square[data-category="coop"] {
+    --category-bg: url(/assets/images/button_img/img_coop.jpg);
+}
+
+
+    /* BUTTONS SQUARE */
+
 header .cart-container {
     display:flex;
     align-items: center;

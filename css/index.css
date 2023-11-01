@@ -27,7 +27,7 @@
 
 :root {
 
-    /*Colors*/
+    /* COLORS */
 
     --primary-color: #1B203D;
     --secondary-color: #6269AD;
@@ -37,7 +37,6 @@
 }
 
 
-/* Header & Nav */
 
 header {
     display:flex;
@@ -79,7 +78,7 @@ summary a {
     margin:0rem;
 }
 
-/* Logo */
+/* LOGO */
 
 .logo img {
     min-width: 5rem;
@@ -122,7 +121,6 @@ button, .hamburger, .cart {
     font-size: 1rem;
 }
 
-/* Cart */
 
 header .cart-container {
     display:flex;
@@ -132,7 +130,7 @@ header .cart-container {
     padding:0;
 }
 
-/* Desktop */
+/* DESKTOP */
 
 header .show-on-desktop, .search-container {
     display:none;
@@ -159,7 +157,7 @@ body {
         cursor: pointer;
     }
 
-    /* Search */
+    /* SEARCH */
 
     header .search-container {
         display:block;
@@ -209,7 +207,5 @@ body {
         min-height:484px;
         width:363px;
 
-   
-    
 
 }

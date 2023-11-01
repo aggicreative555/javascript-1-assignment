@@ -361,6 +361,34 @@ body {
         padding:0.5rem;
     }
 
+    /* CAROUSEL */
+
+    body .slider {
+        aspect-ratio: 12/3;
+        flex-direction: row; 
+        width: 100%; 
+        scroll-snap-type: none; 
+        overflow-x: hidden;
+    }
+
+    body .slider img {
+        flex: 0 0 100%; 
+        scroll-snap-align: start; 
+        object-position:center 70%;
+    }
+
+    body #slide-2 {
+        object-position: center 30%;
+    }
+
+    body #slide-3 {
+        object-position: center center;
+    }
+
+    body #slide-4 {
+        object-position: center 40%;   
+    }
+
     /* PRODUCT CARD */
 
     body .product-card-container {

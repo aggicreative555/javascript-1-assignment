@@ -30,10 +30,18 @@
     /* COLORS */
 
     --primary-color: #1B203D;
+    --primary-40: #A0A3E7;
     --secondary-color: #6269AD;
     --background-color:#F3F2FF;
     --main-text-color:#212121;
     --UI-white: #fff;
+
+    /* DROP SHADOW */
+
+    --drop-shadow-card: 0px 1px 1px 0px rgba(160, 163, 231, 0.50);
+    --drop-shadow-carousel: 0px 1px 16px 0px rgba(160, 163, 231, 0.7);
+
+
 }
 
 

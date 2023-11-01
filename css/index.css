@@ -189,6 +189,14 @@ button, .hamburger, .cart {
     font-size: 1rem;
 }
 
+    /* NEW RELEASES */
+
+body .button-container-L {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin:0;
     padding:1rem;
     min-height:156px;
@@ -201,12 +209,22 @@ button, .hamburger, .cart {
     background-repeat: none;
     cursor:pointer;
     box-shadow: var(--drop-shadow-card);
+}
+
+body .btn-text-L {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.5rem;
     font-weight: 500;
     position: relative;
     height: 100%;
     width:100%;
     color: var(--UI-white);
+}
+
+    /* NEW RELEASES */
+
     background-image: var(--category-bg,none);
     background-size: cover;
     background-position: center;

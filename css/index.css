@@ -408,4 +408,13 @@ body {
         width:363px;
 
 
+    /* SECTIONS */
+/* 
+    .section {
+        display:flex;
+        flex-direction: column;
+        width:1548px;
+        justify-content:center;
+        align-items: flex-start;
+    } */
 }

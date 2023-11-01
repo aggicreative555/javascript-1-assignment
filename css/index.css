@@ -189,6 +189,14 @@ button, .hamburger, .cart {
     font-size: 1rem;
 }
 
+    background-image: url(/assets/images/button_img/img_newreleases.jpg);
+    background-size: cover;
+    background-position: 50% 40%;
+    background-repeat: none;
+    background-image: var(--category-bg,none);
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
 
 .button-container-square[data-category="horror"] {
     --category-bg: url(/assets/images/button_img/img_horror.jpg);

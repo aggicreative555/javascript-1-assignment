@@ -67,6 +67,21 @@
 
 }
 
+    
+
+h1 {
+    color: var(--black90, #212121);
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h1 .alt-text-color {
+    color: var(--secondary-color);
+    font-weight: inherit;
+}
+
 
 
 header {

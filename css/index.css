@@ -405,8 +405,22 @@ body {
 
     body .product-image {
         min-height:484px;
-        width:363px;
+        width:363px;    
+    }
 
+    /* BUTTON XL */
+
+    body .button-container-L {
+        height:332px;
+        max-width: 1207px;
+    }
+
+    /* BUTTON SQUARE */
+
+    body .buttons-container {
+        display: grid;
+        grid-template-columns:repeat(4, 1fr);
+    }
 
     /* SECTIONS */
 /* 

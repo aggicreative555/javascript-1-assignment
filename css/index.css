@@ -189,12 +189,24 @@ button, .hamburger, .cart {
     font-size: 1rem;
 }
 
+    margin:0;
+    padding:1rem;
+    min-height:156px;
+    max-width: 1207px;
+    border: 0;
+    border-radius:12px ;
     background-image: url(/assets/images/button_img/img_newreleases.jpg);
     background-size: cover;
     background-position: 50% 40%;
     background-repeat: none;
     cursor:pointer;
     box-shadow: var(--drop-shadow-card);
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    height: 100%;
+    width:100%;
+    color: var(--UI-white);
     background-image: var(--category-bg,none);
     background-size: cover;
     background-position: center;

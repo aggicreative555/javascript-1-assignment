@@ -225,6 +225,16 @@ body .btn-text-L {
 
     /* NEW RELEASES */
 
+    /* BUTTONS SQUARE */
+
+body .buttons-container {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    justify-content: center;
+    max-width: 1548px;
+    width: 100%;
+}
     background-image: var(--category-bg,none);
     background-size: cover;
     background-position: center;

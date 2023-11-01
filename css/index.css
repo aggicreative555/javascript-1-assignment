@@ -82,7 +82,28 @@ h1 .alt-text-color {
     font-weight: inherit;
 }
 
+/* SECTIONS */
 
+main > div:not(.banner) {
+    margin:auto 1rem;
+}
+
+    body .section h1 {
+        text-wrap: wrap;
+        margin: 1rem auto;
+    }
+
+    .section {
+        margin: 2rem auto;
+    }
+
+    .section a {
+        text-decoration: none;
+    }
+
+
+
+/* HEADER & NAV */
 
 header {
     display:flex;

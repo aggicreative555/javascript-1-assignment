@@ -121,3 +121,24 @@ body .product-card-price > .sale-price {
     font-weight: bold;
     font-size: 1.25rem;
 }
+
+/* HORIZONTAL SCROLL */
+
+.media-scroller {
+    display:grid;
+    gap: 1rem;
+    grid-auto-flow:column;
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+
+}
+
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 1rem;
+}
+
+.snaps-inline > * {
+    scroll-snap-align: start;
+}

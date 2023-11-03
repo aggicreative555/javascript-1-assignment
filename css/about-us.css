@@ -1,1 +1,17 @@
 @import url(/css/index.css);
+
+.section-title {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+#inline-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 4rem 0 4rem 0;
+    justify-content: center;
+    align-items: center;
+}

@@ -552,4 +552,7 @@ body {
     /* SECTIONS */
 
     .section {
+        width:100vh;
+    }
+
 }

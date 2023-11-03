@@ -16,7 +16,7 @@ body .slider {
     display: flex;
     flex-direction: row;
     aspect-ratio: 14/10;
-    overflow-x: auto;
+    overflow-x: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     /* animation: slide 40s ease-in infinite; */

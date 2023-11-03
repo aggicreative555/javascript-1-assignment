@@ -35,3 +35,26 @@
     padding:0.5rem 0;
 }
 
+/* IMAGE */
+
+.image-wrapper bottom {
+    position: relative;
+    max-width: 100vw;
+    height:fit-content;
+    margin: 0 auto;
+    box-shadow: var(--drop-shadow-carousel);
+}
+
+
+.image-container {
+    display: flex;
+    aspect-ratio: 14/10;
+}
+
+.image-container img {
+    object-fit:cover;
+    object-position: center center;
+    width:100vh;
+    height:inherit;
+}
+

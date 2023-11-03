@@ -35,6 +35,8 @@
     --secondary-color: #6269AD;
     --background-color:#F3F2FF;
     --main-text-color:#212121;
+    --gray-20: #D3D5DD;
+    --gray-50: #8B8E96;
     --UI-white: #fff;
 
     /* DROP SHADOW */
@@ -66,9 +68,84 @@
     --category-bg-spacewars: url(/assets/images/product-images/GameHub_spacewar.jpg);
     --category-bg-furious: url(/assets/images/product-images/GameHub_furious.jpg);
 
+    /* NEW RELEASES */
+
+    --category-bg-newreleases: url(/assets/images/button_img/img_newreleases.jpg);
+
+    /* CONTACT US */
+
+    --category-bg-faq: url(/assets/images/button_img/img_faq.jpg);
+    --category-bg-customersupport: url(/assets/images/button_img/img_customersupport.jpg);
+
+    /* ABOUT US */
+
+    --category-bg-careers: url(/assets/images/button_img/img_careers.jpg);
+    --category-bg-services: url(/assets/images/button_img/img_services.jpg);
+    --category-bg-sustainability: url(/assets/images/button_img/img_sustainability.jpg);
 }
 
-    
+
+.button-container-square[data-category="horror"] {
+    --category-bg: url(/assets/images/button_img/img_horror.jpg);
+}
+
+.button-container-square[data-category="openworld"] {
+    --category-bg: url(/assets/images/button_img/img_openwolrd.jpg);
+}
+
+.button-container-square[data-category="simualtion"] {
+    --category-bg: url(/assets/images/button_img/img_simulation.jpg);
+}
+
+.button-container-square[data-category="visualnovel"] {
+    --category-bg: url(/assets/images/button_img/img_visualnovel.jpg);
+}
+
+.button-container-square[data-category="sport"] {
+    --category-bg: url(/assets/images/button_img/img_sports.jpg);
+}
+
+.button-container-square[data-category="racing"] {
+    --category-bg: url(/assets/images/button_img/img_racing.jpg);
+}
+
+.button-container-square[data-category="free"] {
+    --category-bg: url(/assets/images/button_img/img_free.jpg);
+}
+
+.button-container-square[data-category="coop"] {
+    --category-bg: url(/assets/images/button_img/img_coop.jpg);
+}
+
+
+
+.button-container-L[data-category="faq"] {
+    --category-bg: url(/assets/images/button_img/img_faq.jpg);
+
+}
+.button-container-L[data-category="customersupport"] {
+    --category-bg: url(/assets/images/button_img/img_customersupport.jpg);
+}
+
+
+.button-container-L[data-category="newreleases"] {
+    --category-bg: url(/assets/images/button_img/img_newreleases.jpg);
+}
+
+
+.button-container-L[data-category="careers"] {
+    --category-bg: url(/assets/images/button_img/img_careers.jpg);
+}
+.button-container-L[data-category="services"] {
+    --category-bg: url(/assets/images/button_img/img_services.jpg);
+}
+.button-container-L[data-category="sustainability"] {
+    --category-bg: url(/assets/images/button_img/img_sustainability.jpg);
+}
+
+
+
+
 
 h1 {
     color: var(--black90, #212121);

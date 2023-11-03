@@ -39,3 +39,17 @@ textarea {
 .contact-title-section {
     padding: 0 0 2rem 0 ;
 }
+
+/* TITLE */
+
+#contact-title {
+    padding:0.5rem 0;
+    font-weight: 700;
+}
+
+#caption-L {
+    color: var(--secondary-color,#6269AD);
+    font-size: 1rem;
+    font-weight: 400;
+}
+

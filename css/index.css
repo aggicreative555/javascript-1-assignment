@@ -164,7 +164,22 @@ h1 .alt-text-color {
 }
 
 h3 {
-    font-size: 1.5rem;
+    color: var(--black90, #212121);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h4 {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+
+p {
+    font-size: 1.25rem;
+    color: var(--main-text-color);
+    font-weight: 400;
 }
 
   /* TEXT STYLES */

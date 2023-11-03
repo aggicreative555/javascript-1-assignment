@@ -286,6 +286,18 @@ button, .hamburger, .cart {
 
     /* NEW RELEASES */
 
+body .button-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+
+body .button-wrapper a {
+    width:100%;
+}
+
 body .button-container-L {
     display: flex;
     position: relative;

@@ -551,7 +551,15 @@ body {
 
     body .buttons-container {
         display: grid;
-        grid-template-columns:repeat(4, 1fr);;
+        grid-template-columns:repeat(4, 1fr);
+    }
+
+    /* SECONDARY BUTTONS */
+    .buttons-wrapper-products-page {
+        display:flex;
+        flex-direction: row;
+        justify-content:flex-start;
+        align-items: flex-start;
     }
 
     /* CONTACT US BUTTONS */

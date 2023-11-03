@@ -170,9 +170,6 @@ h3 {
 
 /* SECTIONS */
 
-main > div:not(.banner) {
-    margin:auto 1rem;
-}
 
     body .section h1 {
         text-wrap: wrap;
@@ -247,7 +244,6 @@ summary a {
 
 .btn-cta {
     margin: 0.5rem;
-    padding: 1rem;
     border-radius: 0.5rem;
     border: none;
     background-color: var(--primary-color);
@@ -505,16 +501,9 @@ body {
 
     body .buttons-container {
         display: grid;
-        grid-template-columns:repeat(4, 1fr);
     }
 
     /* SECTIONS */
-/* 
+
     .section {
-        display:flex;
-        flex-direction: column;
-        width:1548px;
-        justify-content:center;
-        align-items: flex-start;
-    } */
 }

@@ -146,6 +146,7 @@
 
 
 
+  /* TEXT STYLES */
 
 h1 {
     color: var(--black90, #212121);
@@ -159,6 +160,13 @@ h1 .alt-text-color {
     color: var(--secondary-color);
     font-weight: inherit;
 }
+
+h3 {
+    font-size: 1.5rem;
+}
+
+  /* TEXT STYLES */
+
 
 /* SECTIONS */
 

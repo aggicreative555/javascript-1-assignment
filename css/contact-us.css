@@ -53,3 +53,33 @@ textarea {
     font-weight: 400;
 }
 
+/* TEXT STYLES */
+
+.required::before {
+    content: "*";
+}
+
+.form-container label {
+    font-size: 1rem;
+    color: var(--main-text-color:#212121;);
+    font-style: normal;
+}
+
+#uppercase {
+    text-transform: uppercase;
+    font-weight:900;
+    color: var(--primary-color, #1B203D);
+}
+
+.placeholder-style::placeholder {
+    font-weight: 400;
+    color: #6269AD;
+}
+
+#maintopic.placeholder-style, #subtopic.placeholder-style {
+    font-weight: 400;
+    color: #6269AD;
+}
+
+
+

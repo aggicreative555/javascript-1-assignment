@@ -1,1 +1,41 @@
 @import url(/css/index.css);
+
+
+/* SECTIONS */
+
+.content-container {
+    margin:2rem 1rem;
+}
+
+.section-contact {
+    padding:1rem;
+}
+
+.form-container {
+    display:flex;
+    justify-items: flex-start;
+    width:auto;
+}
+
+fieldset {
+    border:0;
+    padding: 0.5rem 0;
+}
+
+input, textarea, select {
+    border: var(--gray-20) 2px solid;
+    border-radius: 0.25rem;
+    padding: 1rem 1.5rem;
+    width:100%;
+}
+
+textarea {
+    height: 202px;
+    width:100%;
+    resize:none;
+}
+
+
+.contact-title-section {
+    padding: 0 0 2rem 0 ;
+}

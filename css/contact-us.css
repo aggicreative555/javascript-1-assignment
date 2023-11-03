@@ -17,7 +17,6 @@ fieldset {
     padding: 0.5rem 0;
 }
 
-input, textarea, select {
     border: var(--gray-20) 2px solid;
     border-radius: 0.25rem;
     padding: 1rem 1.5rem;

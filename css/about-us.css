@@ -15,3 +15,23 @@
     justify-content: center;
     align-items: center;
 }
+
+/* TEXT */
+
+.XXL {
+    font-size: 4rem;
+    line-height: 3rem;
+}
+
+.extra-space {
+    padding-top: 1.25rem;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.subtitle {
+    padding:0.5rem 0;
+}
+

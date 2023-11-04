@@ -412,6 +412,147 @@ body .button-container-square {
 }
     /* BUTTONS SQUARE */
 
+
+    /* ACCORDION BUTTON */
+
+.accordion-button-container {
+    flex-grow:inherit;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    background-color: var(--UI-white);
+    width: 100%;
+    max-width: 589px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.accordion-button {
+    flex-grow: inherit;
+    padding: 1rem 2rem;
+    flex-direction: column;
+    width: 100%;
+    height:auto;
+
+}
+
+summary.title-container-button-accordion::marker {
+    display: none;
+}
+
+.title-container-button-accordion {
+    padding:0.5rem;
+    text-transform: uppercase;
+}
+
+.accordion-title {
+    font-weight: 700;
+}
+
+.accordion-button-details-container {
+    flex-grow: inherit;
+    width:100%;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+/* IMAGE */
+
+.game-img-container {
+    margin:0.5rem;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    height:200px;
+    width:150px;
+}
+
+.accordion-game-img {
+    height:inherit;
+    width:auto;
+    background-image: var(--category-bg,none);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: none;
+
+}
+
+/* DESCRIPTION */
+
+.summary-description-wrapper {
+    display:flex ;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:0.5rem 1rem;
+    gap:1rem 0;
+    width:inherit;
+    max-width: 367px ;
+    height:inherit;
+}
+
+.caption-S, .caption-XS, .console, .game-name {
+    color: var(--main-text-color, #212121);
+}
+
+.console, .game-name {
+    font-weight: 700;
+}
+
+
+.console::before {
+    content: " | ";
+    color: var(--gray-50);
+}
+
+/* CAPTION */
+
+.title-caption {
+    display:flex;
+    flex-direction: column;
+}
+
+#colon {
+    color: var(--gray-50);
+}
+
+.caption-XS {
+    font-size: 0.75rem;
+    text-align: left;
+}
+
+#colon::after {
+    content: ": ";
+}
+
+.gamename + .console {
+    font-size: 1rem;
+}
+
+/* PRICE */
+
+.caption-price {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:0.5rem;
+}
+
+.caption-S {
+    color: var(--secondary-color);
+    font-weight: 400;
+}
+
+/* TOTAL */
+
+.total-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+    /* ACCORDION BUTTON */
+
+
 /* CART */
 
 header .cart-container {
@@ -560,6 +701,22 @@ body {
         flex-direction: row;
         justify-content:flex-start;
         align-items: flex-start;
+    }
+
+    /* ACCORDION BUTTON */
+
+    .accordion-button-details-container {
+        display: flex;
+        width:100%;
+        flex-direction: row;
+        padding: 1rem 0;
+    }
+
+    .button-wrapper-checkout {
+        display: flex;
+        justify-content:center;
+        width:100%;
+        max-width: 589px;     
     }
 
     /* CONTACT US BUTTONS */

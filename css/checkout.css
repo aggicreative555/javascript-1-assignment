@@ -53,6 +53,21 @@
     align-items: center; 
     height: 100%;
 }
+
+.title-section > h3 {
+    line-height: 100%;
+    font-weight: 800;
+    word-wrap: break-word;
+    white-space:normal ;
+}
+
+.title-section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 0;
+}
+
 .description-container p, span {
     font-size: 1rem;
     font-weight: 500;
@@ -87,6 +102,11 @@
     display: flex;
     flex-direction: row;
 }
+
+.green-text {
+    color: #258503;
+}
+
 .content-container#checkout {
     
     margin:2rem 1rem;
@@ -107,3 +127,6 @@
     justify-content: center;
     height:auto;
 }
+
+
+/* CHECKOUT PAGE */

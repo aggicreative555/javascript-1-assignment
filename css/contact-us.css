@@ -3,10 +3,6 @@
 
 /* SECTIONS */
 
-.content-container {
-    margin:2rem 1rem;
-}
-
 .form-container {
     display:flex;
     flex-wrap: wrap;

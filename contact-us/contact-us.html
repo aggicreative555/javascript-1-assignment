@@ -1,109 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gamehub | The Ultimate Shop For Gamers</title>
-    <meta description="The ultimate destination for gamers. Shop games for Playbox, GameStation, Nantendo Games and so much more!">
-   
-    <!--Fav Icon-->
-    <link rel="icon" href="/assets/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" href="/assets/favicon/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png"><!-- 180×180 -->
-    <link rel="manifest" href="/assets/favicon/site.webmanifest">
     
-    <!--CSS-->
-    
-    <link rel="stylesheet" href="/css/index.css">
 
-    <!--Google Material Icons-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-</head>
-<body>
     <!-- NAV -->
     <header>
-        <div class="header-right">
-          <button class="hamburger">
-            <span class="material-symbols-outlined" aria-label="Menu">
-              menu
-            </span>
-          </button>
-          <div class="logo">
-            <a href="/index.html">
-                <img src="/assets/logo/GameHub_Logo.png" alt="GameHub Logo">
-            </a>
-          </div>
-  
-  <!-- DROPDOWN -->
-          <div class="dropdown-menu">
-            <details id="main-nav">
-              <summary class="show-on-desktop">Shop</summary>
-              <nav>
-                <div class="dropdown-title-menu">
-                  <span id="subtitle-L-top">Menu<span>
-                  <button id="close-menu-button" aria-label="Close menu">
-                    <span class="material-symbols-outlined">close</span>
-                  </button>
-                </div>
-                <div class="nav-container">
-                  <div class="dropdown-section">
-                    <div class="dropdown-title">
-                      <span class="subtitle-L">Shop By Console</span>
-                    </div>
-                    <ul>
-                      <li><a href="#">Play Box</a></li>
-                      <li><a href="#">Play Hub</a></li>
-                    </ul>
                   </div>
-                  <div class="dropdown-section">
-                    <div class="dropdown-title">
-                      <span class="subtitle-L">Shop By Category </span>
-                      <span class="material-symbols-outlined" aria-label="Go to category page">chevron_right</span>
-                    </div>
-                    <ul>
-                      <li>
-                        <a href="#" class="link-selected">All Games</a>
-                      <li><a href="#">Open World</a></li>
-                      <li><a href="#">Simulation</a></li>
-                      <li><a href="#">Visual Novel</a></li>
-                      <li><a href="#">Racing</a></li>
-                      <li><a href="#">Sports</a></li>
-                      <li><a href="#">Free</a></li>
-                      <li><a href="#">Horror</a></li>
-                      <li><a href="#">Co-op</a></li>
-                    </ul>
                   </div>
-                  <div class="dropdown-support">
-                    <div class="dropdown-title">
-                      <span class="subtitle-L" >Support</span>
-                      <span class="material-symbols-outlined" aria-label="Go to support page">chevron_right
-                      </span>
-                    </div>
                 </div>
-              </nav>
-            </details>
-          </div>
-  <!-- DROPDOWN -->
-  
-  <!-- LINKS -->
-          <a href="/about-us/about-us.html" class="show-on-desktop">About Us</a>
-          <div class="search-container">
-            <search class="search-field">
-              <form action="./search/">
-                <input type="search" id="search" name="search" placeholder="Search game, brand..." aria-label="Search game, brand or others"/>
-                <button type="submit" class="search-btn">
-                  <span class="material-symbols-outlined" aria-label="Submit search">
-                    search
-                  </span>
-                </button>
-              </form>
-            </search>
-          </div>         
         </div>
-   <!-- LINKS -->
-  
-   <!-- RIGHT SIDE -->
       <div class="header-right">
         <div class="cart-container">
           <button class="cart">
@@ -116,13 +21,9 @@
         <button class="btn-cta show-on-desktop"><a href="
           #">Login</a></button>
       </div>
-  <!-- RIGHT SIDE -->
-  <!-- NAV -->
-      </header>
       <main>
         <div class="content-container contact-page">
           <!-- TITLE -->
-             <div class="section">
                 <div class="section-title">
                     <h1 id="uppercase">Contact Us</h1>
                 </div>
@@ -144,104 +45,8 @@
                         </div>
                     </a>
                 </div>
-        <!-- BUTTONS -->
-            </div>
-        <!-- FORM -->
-            <div class="section form">
-                <div class="form-container">
-                    <form class= contact-form action="#" method="GET">
-                        <!-- TITLE SECTION -->
-                        <div class="contact-title-section">
-                            <h3 id="contact-title">Contact Form</h3>
-                            <span class="required" id="caption-L">Required Fields</span>
-                        </div>
-                        <!-- MAIN TOPIC -->
-                        <fieldset class="topics">
                             <div class="section-contact">
-                                <label for="maintopic" class="required">Main Topic</label>
-                                <select class="placeholder-style" name="maintopic" id="maintopic">
-                                  <option class="placeholder-style" value="disabled selected">Choose a topic</option>
-                                  <option value="Returns">Returns</option>
-                                  <option value="Shipment">Shipping</option>
-                                  <option value="Game guarantee">Game guarantee</option>
-                                  <option value="Other">Other</option>
-                                </select>
                             </div>
-                            <!-- SUBTOPIC -->
                             <div class="section-contact">
-                              <label for="subtopic">Sub Topic</label>
-                                <select class="placeholder-style" name="subtopic" id="subtopic">
-                                  <option class="placeholder-style" value="disabled selected">Choose a sub-topic</option>
-                                  <option value="Return time">Return time</option>
-                                  <option value="Return procedure">Return procedure</option>
-                                  <option value="I have not recieved a return label">I have not recieved a return label</option>
-                                  <option value="Other">Other</option>
-                                </select>
-                                </datalist>
-                            </div>
-                            <!-- NAME -->
-                        </fieldset>
-                        <fieldset class="personal-info">
-                          <div class="section-contact">
-                            <label for="name-surname" class="required">Full Name</label>
-                            <input class="placeholder-style" type="text" id="name-surname" name="name-surname" minlength="5" maxlength="20" required title="Please write your full name, 5-20 characters" placeholder="Name and Surname">
-                          </div>
-                            <!-- EMAIL -->
-                          <div class="section-contact">
-                            <label for="email" class="required">Email</label>
 
-                            <input class="placeholder-style" type="email" id="email" name="email" required title="
-                            Please write an email addres under these domains: @gmail.com, @hotmail.com or @outlook.com" pattern="^\w+@(gmail\.com|hotmail\.com|outlook\.com)$" placeholder="johndoe@gmail.com">
-                          </div>
-                        </fieldset>
-                        <fieldset>
-                            <!-- MESSAGE -->
-                          <div class="section-contact">
-                            <label for="message" class="required">Message</label>
-                            <textarea class="placeholder-style" id="message" name="message" required placeholder="Please write your message here"></textarea>
-                          </div>
-                        </fieldset>
-                            <!-- CTA -->
-                        <button type="submit" class="btn-cta long">Submit</button>
-                    </form>
-                </div>
-            </div>
-          <!-- FORM -->
         </div>
-    </main>
-    <footer>
-        <!--FOOTER TOP SECTION-->
-        <div class="footer-container">
-        <div class="footer-top-container">
-            <div class="footer-logo-some-section">
-            <div class="footer-logo">
-                <a href="/index.html">
-                    <img src="/assets/logo/GameHub_Logo.png" alt="GameHub Logo">
-                </a>
-            </div>
-            <div class="footer-social-media-icons">
-                <a href="#"><img src="/assets/icons/icon_insta.svg" alt="Instagram"></a>
-                <a href="#"><img src="/assets/icons/icon_fb.svg" alt="Facebook"></a>
-                <a href="#"><img src="/assets/icons/icon_twitter.svg" alt="Twitter"></a>
-                <a href="#"><img src="/assets/icons/icon_youtube.svg" alt="Youtube"></a>
-            </div>
-            </div>
-        </div>
-        <!--FOOTER TOP SECTION-->
-        
-    <!--FOOTER BOTTOM SECTION-->
-        <div class="footer-links-section">
-            <div class="footer-links">
-            <a href="/about-us/about-us.html">About Us</a>
-            <a href="/contact-us/contact-us.html">Contact Us</a>
-            <a href="#">Support</a>
-            <a href="#">Privacy Policy</a>
-            </div>
-            <div class="footer-copyright">
-            <span class="copyright">© 2005 - 2023 GameHub</span>
-            </div>
-        </div>
-        </div>
-    </footer>
-        <!--FOOTER BOTTOM SECTION-->
-</body>

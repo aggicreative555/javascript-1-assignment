@@ -1,5 +1,4 @@
 @import url(/css/index.css);
-@import url(/css/styles.css);
 
 /* PRODUCT BG */
 .product-image[data-category="forgelegend"] {
@@ -141,4 +140,3 @@ body .product-card-price > .sale-price {
 
 .snaps-inline > * {
     scroll-snap-align: start;
-}

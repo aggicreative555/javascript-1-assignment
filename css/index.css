@@ -28,6 +28,11 @@
     line-height: normal;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 
 :root {
 
@@ -681,6 +686,8 @@ body {
         display: flex;
         width: 363px;
         height: auto;
+        align-items: center;
+        justify-content: center;
     }
     
     body .product-card-image {

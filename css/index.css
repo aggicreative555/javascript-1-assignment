@@ -1,12 +1,10 @@
-@import url(/css/dropdown-nav.css);
-/* @import url(/css/styles.css); */
-@import url(/css/footer.css);
-@import url(/css/product-card.css);
-@import url(/css/carousel.css);
-@import url(/css/contact-us.css);
-@import url(/css/product-pages.css);
-@import url(/css/about-us.css);
-@import url(/css/checkout.css);
+@import url(../css/dropdown-nav.css);
+@import url(../css/footer.css);
+@import url(../css/product-card.css);
+@import url(../css/carousel.css);
+@import url(../css/contact-us.css);
+@import url(../css/about-us.css);
+@import url(../css/checkout.css);
 
 *,*:before,*:after{
     box-sizing:inherit;
@@ -55,104 +53,104 @@ html, body {
 
     /* BUTTON SQUARE BACKGROUND */
 
-    --category-bg-horror: url(/assets/images/button_img/img_horror.jpg);
-    --category-bg-openworld: url(/assets/images/button_img/img_openwolrd.jpg);
-    --category-bg-simualtion: url(/assets/images/button_img/img_simulation.jpg);
-    --category-bg-visualnovel: url(/assets/images/button_img/img_visualnovel.jpg);
-    --category-bg-sport: url(/assets/images/button_img/img_sports.jpg);
-    --category-bg-racing: url(/assets/images/button_img/img_racing.jpg);
-    --category-bg-free: url(/assets/images/button_img/img_free.jpg);
-    --category-bg-coop: url(/assets/images/button_img/img_coop.jpg);
+    --category-bg-horror: url(../assets/images/button_img/img_horror.jpg);
+    --category-bg-openworld: url(../assets/images/button_img/img_openwolrd.jpg);
+    --category-bg-simualtion: url(../assets/images/button_img/img_simulation.jpg);
+    --category-bg-visualnovel: url(../assets/images/button_img/img_visualnovel.jpg);
+    --category-bg-sport: url..(/assets/images/button_img/img_sports.jpg);
+    --category-bg-racing: url(../assets/images/button_img/img_racing.jpg);
+    --category-bg-free: url(../assets/images/button_img/img_free.jpg);
+    --category-bg-coop: url(../assets/images/button_img/img_coop.jpg);
 
     /* PRODUCT CARD BG */
 
-    --category-bg-forgelegends: url(/assets/images/product-images/GameHub_forgelegends.jpg);
-    --category-bg-assasin: url(/assets/images/product-images/GameHub_assasin.jpg);
-    --category-bg-pingpong: url(/assets/images/product-images/GameHub_pingpong.jpg);
-    --category-bg-racing: url(/assets/images/product-images/GameHub_racing.jpg);
-    --category-bg-boxer: url(/assets/images/product-images/GameHub_boxer.jpg);
-    --category-bg-superduper: url(/assets/images/product-images/GameHub_superduper.jpg);
-    --category-bg-cyberpunk: url(/assets/images/product-images/GameHub_cyberpunk.jpg);
-    --category-bg-spacewars: url(/assets/images/product-images/GameHub_spacewar.jpg);
-    --category-bg-furious: url(/assets/images/product-images/GameHub_furious.jpg);
+    --category-bg-forgelegends: url(../assets/images/product-images/GameHub_forgelegends.jpg);
+    --category-bg-assasin: url(../assets/images/product-images/GameHub_assasin.jpg);
+    --category-bg-pingpong: url(../assets/images/product-images/GameHub_pingpong.jpg);
+    --category-bg-racing: url(../assets/images/product-images/GameHub_racing.jpg);
+    --category-bg-boxer: url(../assets/images/product-images/GameHub_boxer.jpg);
+    --category-bg-superduper: url(../assets/images/product-images/GameHub_superduper.jpg);
+    --category-bg-cyberpunk: url(../assets/images/product-images/GameHub_cyberpunk.jpg);
+    --category-bg-spacewars: url(../assets/images/product-images/GameHub_spacewar.jpg);
+    --category-bg-furious: url(../assets/images/product-images/GameHub_furious.jpg);
 
     /* NEW RELEASES */
 
-    --category-bg-newreleases: url(/assets/images/button_img/img_newreleases.jpg);
+    --category-bg-newreleases: url(../assets/images/button_img/img_newreleases.jpg);
 
     /* CONTACT US */
 
-    --category-bg-faq: url(/assets/images/button_img/img_faq.jpg);
-    --category-bg-customersupport: url(/assets/images/button_img/img_customersupport.jpg);
+    --category-bg-faq: url(../assets/images/button_img/img_faq.jpg);
+    --category-bg-customersupport: url(../assets/images/button_img/img_customersupport.jpg);
 
     /* ABOUT US */
 
-    --category-bg-careers: url(/assets/images/button_img/img_careers.jpg);
-    --category-bg-services: url(/assets/images/button_img/img_services.jpg);
-    --category-bg-sustainability: url(/assets/images/button_img/img_sustainability.jpg);
+    --category-bg-careers: url(../assets/images/button_img/img_careers.jpg);
+    --category-bg-services: url(../assets/images/button_img/img_services.jpg);
+    --category-bg-sustainability: url(../assets/images/button_img/img_sustainability.jpg);
 }
 
 
 .button-container-square[data-category="horror"] {
-    --category-bg: url(/assets/images/button_img/img_horror.jpg);
+    --category-bg: url(../assets/images/button_img/img_horror.jpg);
 }
 
 .button-container-square[data-category="openworld"] {
-    --category-bg: url(/assets/images/button_img/img_openwolrd.jpg);
+    --category-bg: url(../assets/images/button_img/img_openwolrd.jpg);
 }
 
 .button-container-square[data-category="simualtion"] {
-    --category-bg: url(/assets/images/button_img/img_simulation.jpg);
+    --category-bg: url(../assets/images/button_img/img_simulation.jpg);
 }
 
 .button-container-square[data-category="visualnovel"] {
-    --category-bg: url(/assets/images/button_img/img_visualnovel.jpg);
+    --category-bg: url(../assets/images/button_img/img_visualnovel.jpg);
 }
 
 .button-container-square[data-category="sport"] {
-    --category-bg: url(/assets/images/button_img/img_sports.jpg);
+    --category-bg: url(../assets/images/button_img/img_sports.jpg);
 }
 
 .button-container-square[data-category="racing"] {
-    --category-bg: url(/assets/images/button_img/img_racing.jpg);
+    --category-bg: url(../assets/images/button_img/img_racing.jpg);
 }
 
 .button-container-square[data-category="free"] {
-    --category-bg: url(/assets/images/button_img/img_free.jpg);
+    --category-bg: url(../assets/images/button_img/img_free.jpg);
 }
 
 .button-container-square[data-category="coop"] {
-    --category-bg: url(/assets/images/button_img/img_coop.jpg);
+    --category-bg: url(../assets/images/button_img/img_coop.jpg);
 }
 
 
 
 .button-container-L[data-category="faq"] {
-    --category-bg: url(/assets/images/button_img/img_faq.jpg);
+    --category-bg: url(../assets/images/button_img/img_faq.jpg);
 
 }
 .button-container-L[data-category="customersupport"] {
-    --category-bg: url(/assets/images/button_img/img_customersupport.jpg);
+    --category-bg: url(../assets/images/button_img/img_customersupport.jpg);
 }
 
 
 .button-container-L[data-category="newreleases"] {
-    --category-bg: url(/assets/images/button_img/img_newreleases.jpg);
+    --category-bg: url(../assets/images/button_img/img_newreleases.jpg);
 }
 
 
 .button-container-L[data-category="careers"] {
-    --category-bg: url(/assets/images/button_img/img_careers.jpg);
+    --category-bg: url(../assets/images/button_img/img_careers.jpg);
 }
 .button-container-L[data-category="services"] {
-    --category-bg: url(/assets/images/button_img/img_services.jpg);
+    --category-bg: url(../assets/images/button_img/img_services.jpg);
 }
 .button-container-L[data-category="sustainability"] {
-    --category-bg: url(/assets/images/button_img/img_sustainability.jpg);
+    --category-bg: url(../assets/images/button_img/img_sustainability.jpg);
 }
 
 .accordion-game-img[data-category="forgelegends"] {
-    --category-bg: url(/assets/images/product-images/GameHub_forgelegends.jpg);
+    --category-bg: url(../assets/images/product-images/GameHub_forgelegends.jpg);
 }
 
 

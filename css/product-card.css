@@ -256,3 +256,16 @@ body .product-card-price > .sale-price {
     width:100%;
     justify-content: center;
     align-content: center;
+}
+
+    /* BUTTONS */
+
+.center-section-container.page {
+    box-shadow: var(--drop-shadow-card);
+    cursor: pointer;
+}
+
+.center-section-container.selected {
+    border: 2px solid;
+}
+

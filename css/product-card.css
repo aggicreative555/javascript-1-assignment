@@ -40,7 +40,10 @@
 .product-image[data-category="furious"] {
     --category-bg: url(/assets/images/product-images/GameHub_furious.jpg);
 }
+
 /* PRODUCT BG */
+
+/* PRODUCT CARD */
 
 
 body .product-card-container {
@@ -140,3 +143,40 @@ body .product-card-price > .sale-price {
 
 .snaps-inline > * {
     scroll-snap-align: start;
+}
+
+/* PRODUCT CARD */
+
+
+/* PRODUCTS PAGE */
+
+.breadcrumb-item + .breadcrumb-item :before {
+    content:"/"; 
+}
+
+.breadcrumb-item {
+    display: inline-block;
+}
+
+.breadcrumb {
+    list-style: none;
+}
+
+.breadcrumb a {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--secondary-color)
+}
+
+.filter-results {
+    text-align: center;
+    line-height: 2em;
+}
+
+.buttons-wrapper-products-page {
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+}
+

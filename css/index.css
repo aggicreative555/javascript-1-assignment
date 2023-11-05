@@ -146,6 +146,10 @@
     --category-bg: url(/assets/images/button_img/img_sustainability.jpg);
 }
 
+.accordion-game-img[data-category="forgelegends"] {
+    --category-bg: url(/assets/images/product-images/GameHub_forgelegends.jpg);
+}
+
 
 
 

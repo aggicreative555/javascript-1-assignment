@@ -1,4 +1,4 @@
-@import url(../css/dropdown-nav.css);
+@import url(../css/index.css);
 
 
 .dropdown-menu {
@@ -50,8 +50,7 @@
     margin:0;
     font-size:1rem;
     font-weight: medium;
-    color: var(--secondary-color);
-    
+    color: var(--secondary-color);    
 }
 
 #subtitle-L-top { 

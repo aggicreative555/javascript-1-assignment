@@ -187,6 +187,18 @@ p {
     font-weight: 400;
 }
 
+.link {
+    text-decoration: underline;
+    color: var(--secondary-color);
+    font-weight: 400;
+}
+
+.no-decoration {
+    text-decoration: none;
+    color:var(--main-text-color)
+}
+
+/* TEXT STYLES */
 
 
 /* SECTIONS */

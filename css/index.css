@@ -281,6 +281,10 @@ summary a {
 
 /* BUTTONS */
 
+button {
+    cursor: pointer;
+}
+
 .btn-cta {
     margin: 0.5rem;
     padding: 1rem 1rem;

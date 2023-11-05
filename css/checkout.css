@@ -243,6 +243,7 @@
     border-radius: 8px;
     border: 2px solid var(--primary-color, #1B203D);
     margin:1rem 0;
+    cursor: pointer;
 }
 
 .icon-button {

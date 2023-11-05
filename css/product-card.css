@@ -275,3 +275,75 @@ body .product-card-price > .sale-price {
     padding:0;
 }
 
+/* FORGE LEGENDS */
+
+
+    /* SECTIONS */
+.section-S {
+    margin:1rem 0;
+}
+
+.individual-game-card-container {
+    display:flex;
+    flex-direction: column;
+    border-radius: 0.25rem;
+    margin:0;
+    background-color: var(--UI-white);
+    height:auto;
+}
+
+.forge-legends-margin-container {
+    padding: 1rem;
+}
+
+.title-section-description-right {
+    margin:0.5rem;
+    padding:0.5rem;
+}
+
+.product-description-container {
+    margin-top:2rem;
+    padding:2rem 0;
+    border-top: 1px solid #d1d5df;
+    border-bottom: 1px solid #d1d5df;
+}
+
+.game-card-description-button-group {
+    margin:0.5rem;
+    padding:0.5rem;
+}
+
+.shipping-button-square-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:0.5rem;
+}
+
+.shipping-buttons-square-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    margin: 1rem 0 1rem 0;
+}
+
+.review-button-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin:1rem 0;
+}
+
+.section-S-review {
+    margin:1rem;
+}
+
+.review-card-section {
+    margin:2rem 0;
+}
+
+.standard-delxue-buttons {
+    display: flex;
+    gap:0.5rem;
+
+}
+

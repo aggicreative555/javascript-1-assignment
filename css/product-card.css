@@ -1,4 +1,4 @@
-@import url(/css/index.css);
+@import url(../css/index.css);
 
 /* PRODUCT BG */
 .product-image[data-category="forgelegend"] {
@@ -511,7 +511,7 @@ body .product-card-price > .sale-price {
     gap: 8px;
     align-self: stretch;
     overflow: hidden;
-    background-image: url('/assets/images/product-images/GameHub_forgelegends.jpg');
+    background-image: url('../assets/images/product-images/GameHub_forgelegends.jpg');
     background-size: cover; 
     background-position: center 45%; 
     background-repeat: no-repeat;
@@ -526,7 +526,7 @@ body .product-card-price > .sale-price {
     border-radius: 50%;
     align-self: stretch;
     overflow: hidden;
-    background-image: url('/assets/images/product-images/GameHub_forgelegends.jpg');
+    background-image: url('../assets/images/product-images/GameHub_forgelegends.jpg');
     background-size: cover; 
     background-position: center 45%; 
     background-repeat: no-repeat;

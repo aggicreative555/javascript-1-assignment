@@ -269,3 +269,9 @@ body .product-card-price > .sale-price {
     border: 2px solid;
 }
 
+    /* TEXT */
+.title-all-games {
+    margin:0;
+    padding:0;
+}
+

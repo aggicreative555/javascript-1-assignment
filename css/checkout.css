@@ -130,3 +130,69 @@
 
 
 /* CHECKOUT PAGE */
+
+    /* SECTIONS */  
+    
+
+.cart {
+    margin:0;
+    padding: 1rem;
+}
+
+.container-cart-page {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+.cart-card-container {
+    flex:1;
+    margin: 1rem auto;
+    padding:1rem;
+    width:100%;
+}
+
+.top-section-cart-container {
+    flex-grow:inherit;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    padding:1rem 2rem;
+    background-color: var(--primary-color);
+    color: var(--UI-white);
+}
+
+.main-content-cart-container {
+    flex: 1 1 auto;
+    align-items: flex-start;
+    flex-direction:column;
+    padding:1rem;
+    background-color: var(--UI-white);
+}
+
+.image-description {
+    display: flex;
+    flex-direction: row;
+}
+
+.game-img-container.cart {
+    flex: 0 0 auto;
+    margin: 0 1rem;
+    padding: 0;
+}
+
+.description-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-cart-description-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+

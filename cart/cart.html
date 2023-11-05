@@ -24,11 +24,6 @@
     <!-- NAV -->
     <header>
       <div class="header-right">
-        <button class="hamburger">
-          <span class="material-symbols-outlined" aria-label="Menu">
-            menu
-          </span>
-        </button>
         <div class="logo">
           <a href="../index.html">
               <img src="../assets/logo/GameHub_Logo.png" alt="GameHub Logo">
@@ -38,10 +33,15 @@
         <!-- DROPDOWN -->
         <div class="dropdown-menu">
           <details id="main-nav">
-            <summary class="show-on-desktop">Shop</summary>
+            <summary>
+              <span class="show-on-desktop">Shop</span>
+              <span class="material-symbols-outlined" id="hamburger" aria-label="Menu">
+                menu
+              </span>
+            </summary>
             <nav>
               <div class="dropdown-title-menu">
-                <span id="subtitle-L-top">Menu<span>
+                <p id="subtitle-L-top">Menu<p>
                 <button id="close-menu-button" aria-label="Close menu">
                   <span class="material-symbols-outlined">close</span>
                 </button>
@@ -63,7 +63,7 @@
                   </div>
                   <ul>
                     <li>
-                      <a href="#" class="link-selected">All Games</a>
+                      <a href="../products/product-list.html" class="link-selected">All Games</a>
                     <li><a href="#">Open World</a></li>
                     <li><a href="#">Simulation</a></li>
                     <li><a href="#">Visual Novel</a></li>

@@ -33,6 +33,10 @@ html, body {
     height: 100%;
 }
 
+#main-nav > summary {
+    list-style: none;
+}
+
 :root {
 
     /* COLORS */
@@ -317,13 +321,18 @@ button {
     padding:0.25rem;
 }
 
-button, .hamburger, .cart {
+button, .cart {
     background-color: transparent;
     color: inherit;
     border: 0;
     padding: 1rem;
     font-size: 1rem;
 }
+#hamburger {
+    cursor: pointer;
+    padding:0.25rem;
+}
+
 
     /* LONG BUTTON */
     .btn-cta.long {
@@ -611,9 +620,10 @@ body {
         display:block;
     }
 
-    .hamburger {
+    #hamburger {
         display:none;
     }
+
 
     header details {
         cursor: pointer;

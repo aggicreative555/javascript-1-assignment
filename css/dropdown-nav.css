@@ -6,12 +6,12 @@
 }
 
 .dropdown-menu nav {
-    position: absolute;
+    position: fixed;
     background: var(--UI-white);
     width: 375px;
-    height:1080px;
-    top:-1.25rem;
-    left: -13.5rem;
+    height:100%;
+    top:0;
+    left:0;
     z-index: 999;
 }
 
@@ -32,6 +32,7 @@
 
 .dropdown-title-menu {
     display:flex;
+    flex-direction: row;
     justify-content:space-between;
     align-items: flex-start;
     width:375px;

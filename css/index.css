@@ -204,8 +204,24 @@ p {
 /* SECTIONS */
 
 
+.content-container {
+    margin:2rem 1rem;
+    width:100%;
+}
 
 
+body .section h1 {
+    text-wrap: wrap;
+    margin: 1rem auto;
+}
+
+.section {
+    margin: 2rem auto;
+}
+
+.section a {
+    text-decoration: none;
+}
 
 
 

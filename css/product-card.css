@@ -432,3 +432,71 @@ body .product-card-price > .sale-price {
     margin-bottom: 2rem;
 }
 
+    /* TEXT */
+
+
+
+.bold-paragraph {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.p-small {
+    font-size: 1rem;
+    color: #303133;
+}
+
+.game-card-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.game-card-title.bold {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.paragraph-description {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding:0.5rem 2rem 0.5rem 1rem;
+}
+
+.grey-caption {
+    color: #8B8E96;
+}
+.review-group-stars {
+    margin:0 1rem;
+}
+
+.title-description-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.title-description-subtitle-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.uppercase-L {
+    font-size: 3rem;
+    padding-right:0.5rem;
+}
+
+.uppercase-L.bold {
+    font-weight: 700;
+
+}
+
+.caption-XS.bold {
+    font-weight: 900;
+    text-transform: uppercase;
+    padding:0 0.25rem 0 0;
+}

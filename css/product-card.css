@@ -180,3 +180,7 @@ body .product-card-price > .sale-price {
     align-items: flex-start;
 }
 
+.product-image img {
+    height: auto;
+    width: 90px;
+}

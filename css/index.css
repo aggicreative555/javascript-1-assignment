@@ -759,6 +759,19 @@ body {
     /* SECTIONS */
 
     .section {
+        width:100%;
+    }
+
+    .shipping-button-square-group {
+        display: grid;
+        width:auto;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 0.5rem; 
+        width:500px
+    }
+
+    .game-list-wrapper-grid {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     }
 
 }

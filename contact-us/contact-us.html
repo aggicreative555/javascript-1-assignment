@@ -181,10 +181,35 @@
                                   </datalist>
                               </div>
                               <!-- NAME -->
+                          </fieldset>
+                          <fieldset class="personal-info">
                             <div class="section-contact">
+                              <label for="name-surname" class="required">Full Name</label>
+                              <input class="placeholder-style" type="text" id="name-surname" name="name-surname" minlength="5" maxlength="20" required title="Please write your full name, 5-20 characters" placeholder="Name and Surname">
                             </div>
+                              <!-- EMAIL -->
                             <div class="section-contact">
+                              <label for="email" class="required">Email</label>
 
+                              <input class="placeholder-style" type="email" id="email" name="email" required title="
+                              Please write an email addres under these domains: @gmail.com, @hotmail.com or @outlook.com" pattern="^\w+@(gmail\.com|hotmail\.com|outlook\.com)$" placeholder="johndoe@gmail.com">
+                            </div>
+                          </fieldset>
+                          <fieldset>
+                              <!-- MESSAGE -->
+                            <div class="section-contact">
+                              <label for="message" class="required">Message</label>
+                              <textarea class="placeholder-style" id="message" name="message" required placeholder="Please write your message here"></textarea>
+                            </div>
+                          </fieldset>
+                              <!-- CTA -->
+                          <button type="submit" class="btn-cta long">Submit</button>
+                      </form>
+                  </div>
+              </div>
+            <!-- FORM -->
+          </div>
+      </main>
       <footer>
           <!--FOOTER TOP SECTION-->
           <div class="footer-container">

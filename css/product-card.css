@@ -500,3 +500,34 @@ body .product-card-price > .sale-price {
     text-transform: uppercase;
     padding:0 0.25rem 0 0;
 }
+    /* IMG */
+
+.game-card-image-container {
+    display: flex;
+    height: 200px;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    align-self: stretch;
+    overflow: hidden;
+    background-image: url('/assets/images/product-images/GameHub_forgelegends.jpg');
+    background-size: cover; 
+    background-position: center 45%; 
+    background-repeat: no-repeat;
+}
+
+.profile-img {
+    display: flex;
+    height: 100px;
+    width:100px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 50%;
+    align-self: stretch;
+    overflow: hidden;
+    background-image: url('/assets/images/product-images/GameHub_forgelegends.jpg');
+    background-size: cover; 
+    background-position: center 45%; 
+    background-repeat: no-repeat;
+}

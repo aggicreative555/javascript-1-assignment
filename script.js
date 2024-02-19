@@ -1,15 +1,16 @@
-const apiUrl = ('https://api.noroff.dev/api/v1/gamehub');
+const apiUrl = 'https://api.noroff.dev/api/v1/gamehub';
 
-fetch(apiUrl)
-  .then(response => {
-    if (response.ok) {
-      return response.json();
+function doFetch(url) {
+    try {
+        const data = fetch(url)
+            .then((response) => {
+                return response.json();
+            })
+            .then((data) => {
+                console.log('Data', data);
+                return data;
+            });
+    } catch (error) {
+        console.log('Error', error);
     }
-    throw new Error('Failed to fetch products. Status: ' + response.status);
-  })
-  .then(products => {
-    console.log('Products:', products);
-  })
-  .catch(error => {
-    console.error('Error:', error.message);
-  });
+}

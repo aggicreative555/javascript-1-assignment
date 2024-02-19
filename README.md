@@ -1,6 +1,9 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=12285718&assignment_repo_type=AssignmentRepo)
 
-*This project is a part of an assignment from my education at Noroff. 
+<h1>Disclaimer</h1>
+<li>This project is an assignment made by my school, Noroff.</li>
+<li>The HTML & CSS for this website is used for visuals only and is made for my first ever assignment at Noroff, therefore there are countless improvements to be made.</li>
+<li>I would like to improve the website and learn new technologies, for now, I am only using it for the visuals and practicing JavaScript interactions.</li>
 
 <h2>Brief</h2>
 Create an interactive online store to display product from an API endpoint. Use one of the three provided API urls to display products in HTML and allow users to create a basket of items.

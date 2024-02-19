@@ -1,5 +1,7 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=12285718&assignment_repo_type=AssignmentRepo)
 
+*This project is a part of an assignment from my education at Noroff. 
+
 <h2>Brief</h2>
 Create an interactive online store to display product from an API endpoint. Use one of the three provided API urls to display products in HTML and allow users to create a basket of items.
 
@@ -15,8 +17,6 @@ You may use your existing cross course project code as a starting point, or star
 <li>As a user, I want to view an order-confirmation screen after checking out.</li>
 
 <h2>Required Pages</h2>
-The following pages are required to complete this assignment.
-
 <li>Home Page containing product list `/index.html`</li>
 <li>Product Page showing all details of a specific product `/product/index.html`</li>
 <li>Checkout Page showing all items in the basket `/checkout/index.html`</li>

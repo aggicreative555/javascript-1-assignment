@@ -531,3 +531,98 @@ body .product-card-price > .sale-price {
     background-position: center 45%; 
     background-repeat: no-repeat;
 }
+
+
+/* <div class="product-wrapper">
+  <div class="product-container">
+    <div class="game-image"></div>
+    <div class="product-content">
+      <h3 class="product-title"></h3>
+      <h4 class="product-tags"></h4>
+      <div class="product-price">
+        <h4 class="sale"></h4>
+        <h4 class="original"></h4>
+      </div>
+    </div>
+  </div>
+</div>  */
+
+.product-wrapper {
+    border: 1px solid blue;
+    width: fit-content;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.product-container {
+    display: flex;
+    width: auto;
+    max-width: 363px;
+    min-height: 300px;
+    max-height: fit-content;
+    align-items: center;
+    flex-direction: column;
+    background-color:var(--UI-white);
+    border-radius: 0.5rem;
+    box-shadow: 2px 4px 4px 0px rgba(160, 163, 231, 0.50);
+    
+}
+
+.image-container {
+    max-height: 619px;
+    width: 100%;
+}
+
+.game-image {
+    height: 100px;
+    width: 100px;
+    display: block;
+    border-radius: 0.5rem 0.5rem  0 0;
+}
+
+.product-title {
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem 0 0.5rem 0;
+}
+
+.product-content {
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.product-tags {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    font-weight: 400;
+    padding: 0 0 1rem 0 ;
+    text-align: center;
+}
+
+.product-tags::before {
+    content: "Tags: ";
+}
+
+.product-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.product-price h4::before {
+    content: "NOK ";
+    font-size: 1rem;
+}
+
+.original {
+    font-size: 1.5rem;
+}
+
+.sale {
+    font-size: 1rem;
+    text-decoration: line-through;
+    color: var(--secondary-color)
+}

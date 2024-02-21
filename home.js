@@ -2,19 +2,7 @@ import { gamesApiUrl } from "./scripts/const.mjs";
 import { doFetch } from "./scripts/utils/doFetch.mjs";
 
 
-{/* <div class="product-wrapper">
-  <div class="product-container">
-    <div class="game-image"></div>
-    <div class="product-content">
-      <h3 class="product-title"></h3>
-      <h4 class="product-tags"></h4>
-      <div class="product-price">
-        <h4 class="sale"></h4>
-        <h4 class="original"></h4>
-      </div>
-    </div>
-  </div>
-</div> */}
+
 
 function generateGameHtml(game) {
     const gameWrapper = document.createElement('div');
@@ -23,9 +11,13 @@ function generateGameHtml(game) {
     const gameContainer = document.createElement('div');
     gameContainer.classList.add('product-container');
 
-    const gameImage = document.createElement('div');
+    const imageContainer = document.createElement('div');
+    imageContainer.classList.add('image-container');
+
+    const gameImage = document.createElement('img');
     gameImage.classList.add('game-image');
-    gameImage.style.backgroundImage = game.image.url;
+    gameImage.src = game.image.url;
+    gameImage.alt = game.image.alt;
     
     const gameContent = document.createElement('div');
     gameContent.classList.add('product-content');
@@ -50,7 +42,8 @@ function generateGameHtml(game) {
     gameDiscountedPrice.textContent = game.discountedPrice;
     
     gameWrapper.appendChild(gameContainer);
-    gameContainer.append(gameImage, gameContent);
+    gameContainer.append(imageContainer, gameContent);
+    imageContainer.appendChild(gameImage);
     gameContent.append(gameTitle, gameTags, gamePriceContainer);
     gamePriceContainer.append(gamePrice, gameDiscountedPrice);
 
@@ -66,6 +59,7 @@ function displayGames(games) {
         displayContainer.appendChild(gameHtml);
     });
 }
+
 
 async function main() {
     const responseData = await doFetch(gamesApiUrl);

@@ -28,7 +28,7 @@ function generateGameHtml(game) {
 
     const gameTags = document.createElement('h4');
     gameTags.classList.add('product-tags');
-    gameTags.textContent = game.tags;
+    gameTags.textContent = game.genre;
 
     const gamePriceContainer = document.createElement('div');
     gamePriceContainer.classList.add('product-price');
@@ -68,3 +68,39 @@ async function main() {
 }
 
 main();
+
+
+/* <div class="filter-buttons">
+    <div class="button-wrapper">
+        <button class="genre"></button>
+    </div>
+    <div class="button-wrapper">
+        <button class="age"></button>
+    </div>
+    <div class="button-wrapper">
+        <button class="sale"></button>
+    </div>
+</div> */
+
+// Filter 
+
+const filterList = document.querySelector('.filter-buttons');
+const filterButtons = filterList.querySelectorAll('.filter-btn');
+const games = document.querySelectorAll('.product-container');
+
+filterButtons.forEach((button) => {
+    button.addEventListener('click' , (e) => {
+        const filter = e.target.getAttribute('data-filter');
+
+        updateActiveButton(e.target);
+        filterGames(filter);
+    });
+});
+
+function updateActiveButton(newButton) {
+    const activeButton = filterList.querySelector('.active');
+    if (activeButton) {
+        activeButton.classList.remove('active');
+    }
+    newButton.classList.add('active');
+}

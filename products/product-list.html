@@ -12,6 +12,8 @@
         <link rel="apple-touch-icon" href="../assets/favicon/apple-touch-icon.png"><!-- 180×180 -->
         <link rel="manifest" href="../assets/favicon/site.webmanifest">
         
+        <!-- Script -->
+        <script type="module" src="../home.js" defer></script>
 
         <!--CSS-->
         <link rel="stylesheet" href="../css/index.css">
@@ -100,7 +102,6 @@
                 </form>
                 </search>
             </div>         
-            </div>
             <!-- LINKS -->
         
             <!-- RIGHT SIDE -->
@@ -119,6 +120,17 @@
             <!-- RIGHT SIDE -->
             <!-- NAV -->
         </header>
+
+        <div class="filter-buttons">  
+            <button class="filter-btn active" data-filter="All">All</button>
+            <button class="filter-btn" data-filter="Sports">Sports</button>
+            <button class="filter-btn" data-filter="Horror">Horror</button>
+            <button class="filter-btn" data-filter="Adventure">Adventure</button>
+            <button class="filter-btn" data-filter="Action">Action</button>
+        </div>
+
+        <div class="item-list" id="display-container">
+        </div>
 
         <main class="product-list-page">
             <div class="product-list-content-container">

@@ -57,6 +57,8 @@ function displayGames(games) {
         const gameHtml = generateGameHtml(game);
         console.log(gameHtml);
         displayContainer.appendChild(gameHtml);
+
+        console.log(games); 
     });
 }
 
@@ -70,23 +72,10 @@ async function main() {
 main();
 
 
-/* <div class="filter-buttons">
-    <div class="button-wrapper">
-        <button class="genre"></button>
-    </div>
-    <div class="button-wrapper">
-        <button class="age"></button>
-    </div>
-    <div class="button-wrapper">
-        <button class="sale"></button>
-    </div>
-</div> */
-
-// Filter 
-
 const filterList = document.querySelector('.filter-buttons');
 const filterButtons = filterList.querySelectorAll('.filter-btn');
 const games = document.querySelectorAll('.product-container');
+
 
 filterButtons.forEach((button) => {
     button.addEventListener('click' , (e) => {
@@ -97,6 +86,20 @@ filterButtons.forEach((button) => {
     });
 });
 
+function filterGames(genre) {
+    let filteredGames = [];
+
+    if (genre === "All") {
+        filteredGames = games;
+    } else {
+        filteredGames = games.filter(game => game.genre === genre);
+    }
+
+    console.log('Filtered Games:', filteredGames);
+
+    displayFilteredGames(filteredGames);
+}
+
 function updateActiveButton(newButton) {
     const activeButton = filterList.querySelector('.active');
     if (activeButton) {
@@ -104,3 +107,6 @@ function updateActiveButton(newButton) {
     }
     newButton.classList.add('active');
 }
+
+
+

@@ -55,10 +55,7 @@ function displayGames(games) {
     displayContainer.textContent = "";
     games.forEach((game) => {
         const gameHtml = generateGameHtml(game);
-        console.log(gameHtml);
         displayContainer.appendChild(gameHtml);
-
-        console.log(games); 
     });
 }
 
@@ -67,6 +64,8 @@ async function main() {
     const responseData = await doFetch(gamesApiUrl);
     const games = responseData.data;
     displayGames(games);
+
+    return games;
 }
 
 main();
@@ -86,18 +85,22 @@ filterButtons.forEach((button) => {
     });
 });
 
-function filterGames(genre) {
-    let filteredGames = [];
+async function filterGames(genre) {
+    try {
+        const games = await main(); 
+        let filteredGames = [];
 
-    if (genre === "All") {
-        filteredGames = games;
-    } else {
-        filteredGames = games.filter(game => game.genre === genre);
+        if (genre === 'All') {
+            filteredGames = games;
+        } else if (['Action', 'Horror', 'Sports', 'Adventure'].includes(genre)) {
+            filteredGames = games.filter(game => game.genre === genre);
+        }
+        console.log('Filtered Games:', filteredGames);
+
+        displayFilteredGames(filteredGames);
+    } catch (error) {
+        console.error('Error filtering games:', error);
     }
-
-    console.log('Filtered Games:', filteredGames);
-
-    displayFilteredGames(filteredGames);
 }
 
 function displayFilteredGames(filteredGames) {

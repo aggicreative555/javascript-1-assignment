@@ -100,6 +100,16 @@ function filterGames(genre) {
     displayFilteredGames(filteredGames);
 }
 
+function displayFilteredGames(filteredGames) {
+    const displayContainer = document.querySelector('#display-container');
+    displayContainer.innerHTML = '';
+    filteredGames.forEach((game) => {
+        const gameHtml = generateGameHtml(game);
+        displayContainer.appendChild(gameHtml);
+    });
+
+}
+
 function updateActiveButton(newButton) {
     const activeButton = filterList.querySelector('.active');
     if (activeButton) {

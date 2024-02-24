@@ -548,7 +548,6 @@ body .product-card-price > .sale-price {
 </div>  */
 
 .product-wrapper {
-    border: 1px solid blue;
     width: fit-content;
     padding: 1rem;
     margin: 1rem;
@@ -564,8 +563,13 @@ body .product-card-price > .sale-price {
     flex-direction: column;
     background-color:var(--UI-white);
     border-radius: 0.5rem;
-    box-shadow: 2px 4px 4px 0px rgba(160, 163, 231, 0.50);
-    
+    box-shadow: 2px 4px 4px 0px rgba(160, 163, 231, 0.5);
+
+}
+
+.product-container:hover {
+    box-shadow: 4px 6px 8px 0px rgba(160, 163, 231, 0.8);
+    transition: 0.2s ease-in-out; 
 }
 
 .image-container {

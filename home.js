@@ -28,7 +28,7 @@ function generateGameHtml(game) {
 
     const gameTags = document.createElement('h4');
     gameTags.classList.add('product-tags');
-    gameTags.textContent = game.tags;
+    gameTags.textContent = game.genre;
 
     const gamePriceContainer = document.createElement('div');
     gamePriceContainer.classList.add('product-price');
@@ -55,7 +55,6 @@ function displayGames(games) {
     displayContainer.textContent = "";
     games.forEach((game) => {
         const gameHtml = generateGameHtml(game);
-        console.log(gameHtml);
         displayContainer.appendChild(gameHtml);
     });
 }
@@ -65,6 +64,62 @@ async function main() {
     const responseData = await doFetch(gamesApiUrl);
     const games = responseData.data;
     displayGames(games);
+
+    return games;
 }
 
 main();
+
+
+const filterList = document.querySelector('.filter-buttons');
+const filterButtons = filterList.querySelectorAll('.filter-btn');
+const games = document.querySelectorAll('.product-container');
+
+
+filterButtons.forEach((button) => {
+    button.addEventListener('click' , (e) => {
+        const filter = e.target.getAttribute('data-filter');
+
+        updateActiveButton(e.target);
+        filterGames(filter);
+    });
+});
+
+async function filterGames(genre) {
+    try {
+        const games = await main(); 
+        let filteredGames = [];
+
+        if (genre === 'All') {
+            filteredGames = games;
+        } else if (['Action', 'Horror', 'Sports', 'Adventure'].includes(genre)) {
+            filteredGames = games.filter(game => game.genre === genre);
+        }
+        console.log('Filtered Games:', filteredGames);
+
+        displayFilteredGames(filteredGames);
+    } catch (error) {
+        console.error('Error filtering games:', error);
+    }
+}
+
+function displayFilteredGames(filteredGames) {
+    const displayContainer = document.querySelector('#display-container');
+    displayContainer.innerHTML = '';
+    filteredGames.forEach((game) => {
+        const gameHtml = generateGameHtml(game);
+        displayContainer.appendChild(gameHtml);
+    });
+
+}
+
+function updateActiveButton(newButton) {
+    const activeButton = filterList.querySelector('.active');
+    if (activeButton) {
+        activeButton.classList.remove('active');
+    }
+    newButton.classList.add('active');
+}
+
+
+

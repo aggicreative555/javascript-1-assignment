@@ -604,7 +604,7 @@ body .product-card-price > .sale-price {
 }
 
 .product-tags::before {
-    content: "Tags: ";
+    content: "#";
 }
 
 .product-price {
@@ -629,4 +629,43 @@ body .product-card-price > .sale-price {
     font-size: 1rem;
     text-decoration: line-through;
     color: var(--secondary-color)
+}
+
+/* Filter buttons */
+
+.filter-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.filter-wrapper {
+    max-width: 500px;
+}
+
+.filter-btn {
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.5rem;
+    min-width: 100px;
+    max-width: 200px;
+    height: auto;
+    background-color: #FEFEFE;
+    border: 2px solid var(--secondary-color);
+    border-radius: 1rem;
+    transition: .2s ease-in-out;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    box-shadow: 2px 2px 4px 0px rgba(160, 163, 231, 0.50);
+}
+
+.filter-btn.active {
+    pointer-events: none; 
+    background-color: #1B203D;
+    color: var(--UI-white);
 }

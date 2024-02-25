@@ -2,15 +2,10 @@ import { gamesApiUrl } from "./scripts/const.mjs";
 import { addToCart, clearCart } from './scripts/utils/cart.mjs';
 import { doFetch } from "./scripts/utils/doFetch.mjs";
 
-
-
-
 function generateGameHtml(game) {
+
     const gameWrapper = document.createElement('div');
     gameWrapper.classList.add('product-wrapper');
-
-    const gameContainer = document.createElement('div');
-    gameContainer.classList.add('product-container');
 
     const imageContainer = document.createElement('div');
     imageContainer.classList.add('image-container');
@@ -41,23 +36,21 @@ function generateGameHtml(game) {
     const gameDiscountedPrice = document.createElement('h4');
     gameDiscountedPrice.classList.add('sale');
     gameDiscountedPrice.textContent = game.discountedPrice;
+
+    const addToCartBtn = document.createElement('button');
+    addToCartBtn.textContent = 'Add to Cart';
+    addToCartBtn.classList.add('add-to-cart-btn');
+    addToCartBtn.addEventListener('click', () => {
+        addToCart(game);
+    });
     
-    gameWrapper.appendChild(gameContainer);
-    gameContainer.append(imageContainer, gameContent);
-    imageContainer.appendChild(gameImage);
+    gameWrapper.append(imageContainer, gameTitle, gameTags, gamePriceContainer,gameContent, addToCartBtn);
+    imageContainer.append(gameImage)
     gameContent.append(gameTitle, gameTags, gamePriceContainer);
     gamePriceContainer.append(gamePrice, gameDiscountedPrice);
 
-    return gameWrapper;
-}
 
-function displayGames(games) {
-    const displayContainer = document.querySelector('#display-container');
-    displayContainer.textContent = "";
-    games.forEach((game) => {
-        const gameHtml = generateGameHtml(game);
-        displayContainer.appendChild(gameHtml);
-    });
+    return gameWrapper;
 }
 
 
@@ -71,6 +64,23 @@ async function main() {
 
 main();
 
+function displayGames(games) {
+    const displayContainer = document.querySelector('#display-container');
+    displayContainer.textContent = "";
+
+    const gameListContainer = document.createElement('div');
+    gameListContainer.classList.add('game-list-container');
+
+    displayContainer.append(gameListContainer);
+
+    
+    games.forEach((game) => {
+        const gameHtml = generateGameHtml(game);
+        gameListContainer.appendChild(gameHtml);
+    });
+
+    displayContainer.appendChild(gameListContainer);
+}
 
 const filterList = document.querySelector('.filter-buttons');
 const filterButtons = filterList.querySelectorAll('.filter-btn');
@@ -111,7 +121,6 @@ function displayFilteredGames(filteredGames) {
         const gameHtml = generateGameHtml(game);
         displayContainer.appendChild(gameHtml);
     });
-
 }
 
 function updateActiveButton(newButton) {
@@ -123,4 +132,14 @@ function updateActiveButton(newButton) {
 }
 
 
+const clearCartButton = document.getElementById('clear-cart');
+clearCartButton.addEventListener('click', () => {
+  clearCart();
+});
 
+function createCart() {
+    const cart = localStorage.getItem('cart');
+    if (!cart) {
+      localStorage.setItem('cart', JSON.stringify([]));
+    }
+}

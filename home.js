@@ -53,11 +53,11 @@ function generateGameHtml(game) {
     return gameWrapper;
 }
 
-
 async function main() {
     const responseData = await doFetch(gamesApiUrl);
     const games = responseData.data;
     displayGames(games);
+    createCart();
 
     return games;
 }

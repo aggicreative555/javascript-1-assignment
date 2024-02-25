@@ -26,685 +26,140 @@
             <!-- NAV -->
         <header>
             <div class="header-right">
-            <div class="logo">
+                <div class="logo">
                 <a href="../index.html">
                     <img src="../assets/logo/GameHub_Logo.png" alt="GameHub Logo">
                 </a>
-            </div>
-    
-    <!-- DROPDOWN -->
-            <div class="dropdown-menu">
+                </div>
+        
+                <!-- DROPDOWN -->
+                <div class="dropdown-menu">
                 <details id="main-nav">
-                <summary>
+                    <summary>
                     <span class="show-on-desktop">Shop</span>
                     <span class="material-symbols-outlined" id="hamburger" aria-label="Menu">
-                    menu
+                        menu
                     </span>
-                </summary>
-                <nav>
+                    </summary>
+                    <nav>
                     <div class="dropdown-title-menu">
-                    <p id="subtitle-L-top">Menu<p>
-                    <button id="close-menu-button" aria-label="Close menu">
+                        <p id="subtitle-L-top">Menu<p>
+                        <button id="close-menu-button" aria-label="Close menu">
                         <span class="material-symbols-outlined">close</span>
-                    </button>
+                        </button>
                     </div>
                     <div class="nav-container">
-                    <div class="dropdown-section">
+                        <div class="dropdown-section">
                         <div class="dropdown-title">
-                        <span class="subtitle-L">Shop By Console</span>
+                            <span class="subtitle-L">Shop By Console</span>
                         </div>
                         <ul>
-                        <li><a href="#">Play Box</a></li>
-                        <li><a href="#">Play Hub</a></li>
+                            <li><a href="#">Play Box</a></li>
+                            <li><a href="#">Play Hub</a></li>
                         </ul>
-                    </div>
-                    <div class="dropdown-section">
+                        </div>
+                        <div class="dropdown-section">
                         <div class="dropdown-title">
-                        <span class="subtitle-L">Shop By Category </span>
-                        <span class="material-symbols-outlined" aria-label="Go to category page">chevron_right</span>
+                            <span class="subtitle-L">Shop By Category </span>
+                            <span class="material-symbols-outlined" aria-label="Go to category page">chevron_right</span>
                         </div>
                         <ul>
-                        <li>
-                        <a href="../products/product-list.html" class="link-selected">All Games</a>
-                        <li><a href="#">Open World</a></li>
-                        <li><a href="#">Simulation</a></li>
-                        <li><a href="#">Visual Novel</a></li>
-                        <li><a href="#">Racing</a></li>
-                        <li><a href="#">Sports</a></li>
-                        <li><a href="#">Free</a></li>
-                        <li><a href="#">Horror</a></li>
-                        <li><a href="#">Co-op</a></li>
+                            <li>
+                            <a href="../products/product-list.html" class="link-selected">All Games</a>
+                            <li><a href="#">Open World</a></li>
+                            <li><a href="#">Simulation</a></li>
+                            <li><a href="#">Visual Novel</a></li>
+                            <li><a href="#">Racing</a></li>
+                            <li><a href="#">Sports</a></li>
+                            <li><a href="#">Free</a></li>
+                            <li><a href="#">Horror</a></li>
+                            <li><a href="#">Co-op</a></li>
                         </ul>
-                    </div>
-                    <div class="dropdown-support">
+                        </div>
+                        <div class="dropdown-support">
                         <div class="dropdown-title">
-                        <span class="subtitle-L" >Support</span>
-                        <span class="material-symbols-outlined" aria-label="Go to support page">chevron_right
-                        </span>
+                            <span class="subtitle-L" >Support</span>
+                            <span class="material-symbols-outlined" aria-label="Go to support page">chevron_right
+                            </span>
                         </div>
                     </div>
-                </nav>
+                    </nav>
                 </details>
-            </div>
-            <!-- DROPDOWN -->
+                </div>
+                <!-- DROPDOWN -->
         
-            <!-- LINKS -->
-            <a href="../about-us/about-us.html" class="show-on-desktop">About Us</a>
-            <div class="search-container">
+                <!-- LINKS -->
+                <a href="../about-us/about-us.html" class="show-on-desktop">About Us</a>
+                <div class="search-container">
                 <search class="search-field">
-                <form action="./search/">
+                    <form action="./search/">
                     <input type="search" id="search" name="search" placeholder="Search game, brand..." aria-label="Search game, brand or others"/>
                     <button type="submit" class="search-btn">
-                    <span class="material-symbols-outlined" aria-label="Submit search">
+                        <span class="material-symbols-outlined" aria-label="Submit search">
                         search
-                    </span>
+                        </span>
                     </button>
-                </form>
+                    </form>
                 </search>
-            </div>         
+                </div>         
+            </div>
             <!-- LINKS -->
         
             <!-- RIGHT SIDE -->
             <div class="header-right">
-            <div class="cart-container">
-                <button class="cart">
-                <span class="material-symbols-outlined" aria-label="Empty shopping cart">
-                    shopping_cart
-                </span>
-                </button>
-            </div>
-            <a href="#" class="show-on-desktop">Cart</a>
-            <button class="btn-cta show-on-desktop"><a href="
-                #">Login</a></button>
-            </div>
+                <a href="../cart/cart.html" class="cart-icon-container">
+                  <span class="material-symbols-outlined" aria-label="Empty shopping cart">
+                  shopping_cart
+                  </span>
+                  <span class="cart-counter" id="cart-counter"></span>
+                </a>
+                <button class="btn-cta show-on-desktop"><a href="#">Login</a></button>
+              </div>
             <!-- RIGHT SIDE -->
-            <!-- NAV -->
         </header>
 
-        <div class="filter-buttons">  
-            <button class="filter-btn active" data-filter="All">All</button>
-            <button class="filter-btn" data-filter="Sports">Sports</button>
-            <button class="filter-btn" data-filter="Horror">Horror</button>
-            <button class="filter-btn" data-filter="Adventure">Adventure</button>
-            <button class="filter-btn" data-filter="Action">Action</button>
-        </div>
-
-        <div class="item-list" id="display-container">
-        </div>
-
-        <main class="product-list-page">
-            <div class="product-list-content-container">
-                <div class="section">
-                    <div class="bread-crumb-container">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item">
-                                <a href="../index.html">Home</a>
-                            </li>
-                            <li class="breadcrumb-item">
-                                <a href="../products/products.html">All Games</a>
-                            </li>  
-                        </ol>
+        <main>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="../products/products.html"></a>
+                </li>
+            </ol>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="All">All</button>
+                <button class="filter-btn" data-filter="Sports">Sports</button>
+                <button class="filter-btn" data-filter="Horror">Horror</button>
+                <button class="filter-btn" data-filter="Adventure">Adventure</button>
+                <button class="filter-btn" data-filter="Action">Action</button>
+            </div>
+            <div class="item-list" id="display-container">
+            </div>
+            <div class="page-button-bar">
+                <div class="page-button-wrapper">
+                    <div class="center-section-container page">
+                        <span class="material-symbols-outlined">
+                            chevron_left
+                        </span>
                     </div>
-
-                    <div class="title-section-products-page">
-                        <h1 class="title-all-games">All Games</h1>
-                        <span id="caption-L">53 Results</span>
+                    <div class="center-section-container selected">
+                        <span>1</span>
                     </div>
-
-                    <div class="buttons-wrapper-products-list">
-                        <div class="button-container">
-                            <button id="filter-button" class="btn-secondary"><span class="material-symbols-outlined"> filter_list</span> Filter Results </button>
-                        </div>
-                   
-
-                        <div class="button-container">
-                            <select name="sort-by" id="sort-by" class="btn-secondary">
-                                <option value="Best Matches">Sort By: Best Matches</option>
-                                <option value="Best Matches">Sort By: Most Popular</option>
-                                <option value="Best Matches">Sort By: Price Low to High</option>
-                                <option value="Best Matches">Sort By: Price High to Low</option>
-                            </select>
-                        </div>
+                    <div class="center-section-container page">
+                        <span>...</span>
                     </div>
-                </div>
-                <div class="section">
-                    <div class="game-list-wrapper-grid">
-
-                        <!-- PRODUCT -->
-                        <div class="product-card-container">
-                            <a href="../products/forge-legends/forge-legends.html" class="no-decoration">
-                                <div class="product-card-detail">
-                                    <div class="product-card-image">
-                                        <div class="product-image" data-category="forgelegend"></div>
-                                    </div>
-                                    <div class="product-card-body">
-                                        <div class="product-card-header">
-                                            <span class="product-card-title">
-                                            Furious | Playbox One X Enchanced 
-                                            </span>
-                                        </div>
-                                        <div class="product-card-hashtags">
-                                            <span class="hashtags">
-                                            #adventure #storyline #mmorpg
-                                            </span>
-                                        </div>
-                                        <div class="product-card-price">
-                                            <span class="sale-price">
-                                            NOK 799
-                                            </span>
-                                            <span class="original-price">
-                                            NOK 899
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- PRODUCT -->
-                        <div class="product-card-container">
-      
-                            <div class="product-card-detail">
-                                <div class="product-card-image">
-                                    <div class="product-image" data-category="furious"></div>
-                                </div>
-                                <div class="product-card-body">
-                                    <div class="product-card-header">
-                                        <span class="product-card-title">
-                                        Furious | Playbox One X Enchanced 
-                                        </span>
-                                    </div>
-                                    <div class="product-card-hashtags">
-                                        <span class="hashtags">
-                                        #adventure #storyline #mmorpg
-                                        </span>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <span class="sale-price">
-                                        NOK 799
-                                        </span>
-                                        <span class="original-price">
-                                        NOK 899
-                                        </span>
-                                    </div>
-                    
-                                </div>
-                
-                            </div>
-                        </div>
-
-                        <!-- PRODUCT -->
-                        <div class="product-card-container">
-      
-                            <div class="product-card-detail">
-                                <div class="product-card-image">
-                                    <div class="product-image" data-category="cyberpunk"></div>
-                                </div>
-                                <div class="product-card-body">
-                                    <div class="product-card-header">
-                                        <span class="product-card-title">
-                                        Furious | Playbox One X Enchanced 
-                                        </span>
-                                    </div>
-                                    <div class="product-card-hashtags">
-                                        <span class="hashtags">
-                                        #adventure #storyline #mmorpg
-                                        </span>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <span class="sale-price">
-                                        NOK 799
-                                        </span>
-                                        <span class="original-price">
-                                        NOK 899
-                                        </span>
-                                    </div>
-                    
-                                </div>
-                
-                            </div>
-                        </div>
-
-                        <!-- PRODUCT -->
-                        <div class="product-card-container">
-      
-                            <div class="product-card-detail">
-                                <div class="product-card-image">
-                                    <div class="product-image" data-category="forgelegend"></div>
-                                </div>
-                                <div class="product-card-body">
-                                    <div class="product-card-header">
-                                        <span class="product-card-title">
-                                        Furious | Playbox One X Enchanced 
-                                        </span>
-                                    </div>
-                                    <div class="product-card-hashtags">
-                                        <span class="hashtags">
-                                        #adventure #storyline #mmorpg
-                                        </span>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <span class="sale-price">
-                                        NOK 799
-                                        </span>
-                                        <span class="original-price">
-                                        NOK 899
-                                        </span>
-                                    </div>
-                    
-                                </div>
-                
-                            </div>
-                        </div>
-
-
-                        <!-- PRODUCT -->
-                        <div class="product-card-container">
-      
-                            <div class="product-card-detail">
-                                <div class="product-card-image">
-                                    <div class="product-image" data-category="assasin"></div>
-                                </div>
-                                <div class="product-card-body">
-                                    <div class="product-card-header">
-                                        <span class="product-card-title">
-                                        Furious | Playbox One X Enchanced 
-                                        </span>
-                                    </div>
-                                    <div class="product-card-hashtags">
-                                        <span class="hashtags">
-                                        #adventure #storyline #mmorpg
-                                        </span>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <span class="sale-price">
-                                        NOK 799
-                                        </span>
-                                        <span class="original-price">
-                                        NOK 899
-                                        </span>
-                                    </div>
-                    
-                                </div>
-                
-                            </div>
-                        </div>
-
-                        <!-- PRODUCT -->
-
-
-                        <!-- PRODUCT -->
-                        <div class="product-card-container">
-      
-                            <div class="product-card-detail">
-                                <div class="product-card-image">
-                                    <div class="product-image" data-category="superduper"></div>
-                                </div>
-                                <div class="product-card-body">
-                                    <div class="product-card-header">
-                                        <span class="product-card-title">
-                                        Furious | Playbox One X Enchanced 
-                                        </span>
-                                    </div>
-                                    <div class="product-card-hashtags">
-                                        <span class="hashtags">
-                                        #adventure #storyline #mmorpg
-                                        </span>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <span class="sale-price">
-                                        NOK 799
-                                        </span>
-                                        <span class="original-price">
-                                        NOK 899
-                                        </span>
-                                    </div>
-                    
-                                </div>
-                
-                            </div>
-                        </div>
-
-                        <!-- PRODUCT -->
-
-                        
-                        <!-- PRODUCT -->
-                        <div class="product-card-container">
-      
-                            <div class="product-card-detail">
-                                <div class="product-card-image">
-                                    <div class="product-image" data-category="black"></div>
-                                </div>
-                                <div class="product-card-body">
-                                    <div class="product-card-header">
-                                        <span class="product-card-title">
-                                        Furious | Playbox One X Enchanced 
-                                        </span>
-                                    </div>
-                                    <div class="product-card-hashtags">
-                                        <span class="hashtags">
-                                        #adventure #storyline #mmorpg
-                                        </span>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <span class="sale-price">
-                                        NOK 799
-                                        </span>
-                                        <span class="original-price">
-                                        NOK 899
-                                        </span>
-                                    </div>
-                    
-                                </div>
-                
-                            </div>
-                        </div>
-
-                        <!-- PRODUCT -->
-
-
-                        <!-- PRODUCT -->
-                        <div class="product-card-container">
-      
-                            <div class="product-card-detail">
-                                <div class="product-card-image">
-                                    <div class="product-image" data-category="cyberpunk"></div>
-                                </div>
-                                <div class="product-card-body">
-                                    <div class="product-card-header">
-                                        <span class="product-card-title">
-                                        Furious | Playbox One X Enchanced 
-                                        </span>
-                                    </div>
-                                    <div class="product-card-hashtags">
-                                        <span class="hashtags">
-                                        #adventure #storyline #mmorpg
-                                        </span>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <span class="sale-price">
-                                        NOK 799
-                                        </span>
-                                        <span class="original-price">
-                                        NOK 899
-                                        </span>
-                                    </div>
-                    
-                                </div>
-                
-                            </div>
-                        </div>
-
-                        <!-- PRODUCT -->
-
-
-                        <!-- PRODUCT -->
-                        <div class="product-card-container">
-      
-                            <div class="product-card-detail">
-                                <div class="product-card-image">
-                                    <div class="product-image" data-category="racing"></div>
-                                </div>
-                                <div class="product-card-body">
-                                    <div class="product-card-header">
-                                        <span class="product-card-title">
-                                        Furious | Playbox One X Enchanced 
-                                        </span>
-                                    </div>
-                                    <div class="product-card-hashtags">
-                                        <span class="hashtags">
-                                        #adventure #storyline #mmorpg
-                                        </span>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <span class="sale-price">
-                                        NOK 799
-                                        </span>
-                                        <span class="original-price">
-                                        NOK 899
-                                        </span>
-                                    </div>
-                    
-                                </div>
-                
-                            </div>
-                        </div>
-
-                        <!-- PRODUCT -->
-
-                        <!-- PRODUCT -->
-                        <div class="product-card-container">
-      
-                            <div class="product-card-detail">
-                                <div class="product-card-image">
-                                    <div class="product-image" data-category="boxer"></div>
-                                </div>
-                                <div class="product-card-body">
-                                    <div class="product-card-header">
-                                        <span class="product-card-title">
-                                        Furious | Playbox One X Enchanced 
-                                        </span>
-                                    </div>
-                                    <div class="product-card-hashtags">
-                                        <span class="hashtags">
-                                        #adventure #storyline #mmorpg
-                                        </span>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <span class="sale-price">
-                                        NOK 799
-                                        </span>
-                                        <span class="original-price">
-                                        NOK 899
-                                        </span>
-                                    </div>
-                    
-                                </div>
-                
-                            </div>
-                        </div>
-
-                        <!-- PRODUCT -->
-
-
-                        <!-- PRODUCT -->
-                        <div class="product-card-container">
-      
-                            <div class="product-card-detail">
-                                <div class="product-card-image">
-                                    <div class="product-image" data-category="pingpong"></div>
-                                </div>
-                                <div class="product-card-body">
-                                    <div class="product-card-header">
-                                        <span class="product-card-title">
-                                        Furious | Playbox One X Enchanced 
-                                        </span>
-                                    </div>
-                                    <div class="product-card-hashtags">
-                                        <span class="hashtags">
-                                        #adventure #storyline #mmorpg
-                                        </span>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <span class="sale-price">
-                                        NOK 799
-                                        </span>
-                                        <span class="original-price">
-                                        NOK 899
-                                        </span>
-                                    </div>
-                    
-                                </div>
-                
-                            </div>
-                        </div>
-
-                        <!-- PRODUCT -->
-
-                        
-                        <!-- PRODUCT -->
-                        <div class="product-card-container">
-      
-                            <div class="product-card-detail">
-                                <div class="product-card-image">
-                                    <div class="product-image" data-category="furious"></div>
-                                </div>
-                                <div class="product-card-body">
-                                    <div class="product-card-header">
-                                        <span class="product-card-title">
-                                        Furious | Playbox One X Enchanced 
-                                        </span>
-                                    </div>
-                                    <div class="product-card-hashtags">
-                                        <span class="hashtags">
-                                        #adventure #storyline #mmorpg
-                                        </span>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <span class="sale-price">
-                                        NOK 799
-                                        </span>
-                                        <span class="original-price">
-                                        NOK 899
-                                        </span>
-                                    </div>
-                    
-                                </div>
-                
-                            </div>
-                        </div>
-
-                        <!-- PRODUCT -->
-
-
-                        <!-- PRODUCT -->
-                        <div class="product-card-container">
-      
-                            <div class="product-card-detail">
-                                <div class="product-card-image">
-                                    <div class="product-image" data-category="black"></div>
-                                </div>
-                                <div class="product-card-body">
-                                    <div class="product-card-header">
-                                        <span class="product-card-title">
-                                        Furious | Playbox One X Enchanced 
-                                        </span>
-                                    </div>
-                                    <div class="product-card-hashtags">
-                                        <span class="hashtags">
-                                        #adventure #storyline #mmorpg
-                                        </span>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <span class="sale-price">
-                                        NOK 799
-                                        </span>
-                                        <span class="original-price">
-                                        NOK 899
-                                        </span>
-                                    </div>
-                    
-                                </div>
-                
-                            </div>
-                        </div>
-
-                        <!-- PRODUCT -->
-
-                        
-                        <!-- PRODUCT -->
-                        <div class="product-card-container">
-      
-                            <div class="product-card-detail">
-                                <div class="product-card-image">
-                                    <div class="product-image" data-category="furious"></div>
-                                </div>
-                                <div class="product-card-body">
-                                    <div class="product-card-header">
-                                        <span class="product-card-title">
-                                        Furious | Playbox One X Enchanced 
-                                        </span>
-                                    </div>
-                                    <div class="product-card-hashtags">
-                                        <span class="hashtags">
-                                        #adventure #storyline #mmorpg
-                                        </span>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <span class="sale-price">
-                                        NOK 799
-                                        </span>
-                                        <span class="original-price">
-                                        NOK 899
-                                        </span>
-                                    </div>
-                    
-                                </div>
-                
-                            </div>
-                        </div>
-
-                        <!-- PRODUCT -->
-
-                        <div class="product-card-container">
-      
-                            <div class="product-card-detail">
-                                <div class="product-card-image">
-                                    <div class="product-image" data-category="spacewars"></div>
-                                </div>
-                                <div class="product-card-body">
-                                    <div class="product-card-header">
-                                        <span class="product-card-title">
-                                        Furious | Playbox One X Enchanced 
-                                        </span>
-                                    </div>
-                                    <div class="product-card-hashtags">
-                                        <span class="hashtags">
-                                        #adventure #storyline #mmorpg
-                                        </span>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <span class="sale-price">
-                                        NOK 799
-                                        </span>
-                                        <span class="original-price">
-                                        NOK 899
-                                        </span>
-                                    </div>
-                    
-                                </div>
-                
-                            </div>
-                        </div>
-                        <!-- PRODUCT -->
-                        
+                    <div class="center-section-container page">
+                        <span>9</span>
                     </div>
-                    <div class="page-button-bar">
-                        <div class="page-button-wrapper">
-                            <div class="center-section-container page">
-                                <span class="material-symbols-outlined">
-                                    chevron_left
-                                </span>
-                            </div>
-                            <div class="center-section-container selected">
-                                <span>1</span>
-                            </div>
-                            <div class="center-section-container page">
-                                <span>...</span>
-                            </div>
-                            <div class="center-section-container page">
-                                <span>9</span>
-                            </div>
-                            <div class="center-section-container page">
-                                <span class="material-symbols-outlined">
-                                    chevron_right
-                                </span>
-                            </div>
-                        </div>
+                    <div class="center-section-container page">
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
                     </div>
                 </div>
             </div>
-        </main>
-        
+        </main>      
         <!--FOOTER TOP SECTION-->
         <footer>
             <div class="footer-container">

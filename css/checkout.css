@@ -28,11 +28,8 @@
 }
 
 .image-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; 
-    height: 100%; 
+    width: 100px; 
+    height: auto; 
 }
   
 
@@ -231,26 +228,6 @@
 
     /* BUTTON */
 
-.button-container-cart {
-    display: flex;
-    height: 44px;
-    width:fit-content;
-    padding: 12px 16px;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    background-color: var(--UI-white);
-    border-radius: 8px;
-    border: 2px solid var(--primary-color, #1B203D);
-    margin:1rem 0;
-    cursor: pointer;
-}
-
-.icon-button {
-    display: flex;
-    align-items: center;
-}
-
 .center-section-container {
     display: flex;
     padding: 4px 16px;
@@ -281,4 +258,128 @@
 }
 
 /* ACCORDION BUTTON */
+
+
+.cart-product-container {
+    display: flex;
+    width: auto;
+    margin: 1rem;
+    padding: 2rem;
+    max-height: fit-content;
+    align-items: flex-start;
+    justify-content: space-between;   
+    flex-direction: row;
+    background-color:var(--UI-white);
+    box-shadow: 4px 4px 8px 0px rgba(160, 163, 231, 0.3);
+    border: 1px solid rgba(160, 163, 231, 0.2);
+    border-radius: 0.5rem;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.image-container-small {
+    height: auto;
+    min-width: 100px;
+    max-width: 100px;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.game-image-small {
+    object-fit: contain;
+}
+
+.content-wrapper button {
+    cursor: pointer;
+    font-size: 32px;
+    padding: 0 1rem;
+    width: auto;
+}
+
+.outlined {
+    border: 1px solid #D0CFFC;
+    border-radius: .25rem;
+    padding: .25rem 1rem;
     
+}
+
+.button-container-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    max-width: 200px;
+    padding: .25rem .5rem;
+    background-color: var(--UI-white);
+    border-radius: .5rem;
+    border: 2px solid var(--primary-color, #1B203D);
+    cursor: pointer;
+}
+
+.btn-cta.secondary {
+    border: 2px solid var(--primary-color, #1B203D);
+    background-color: var(--UI-white);
+    color: var(--primary-color, #1B203D);
+}
+
+.material-symbols-outlined {
+    transition: transform 0.3s ease;
+    padding: 0 .5rem;
+}
+
+.btn-cta:hover span.material-symbols-outlined {
+    transform: translateX(.7rem);
+}
+
+.btn-cta.small {
+    display: flex;
+    justify-content: flex-start;
+    width: fit-content;
+    font-size: .8rem;
+    font-weight: 600;
+    background-color: var(--UI-white);
+    padding: .5rem 1rem;
+    border: 2px solid #D0CFFC;
+    color: #1B203D;
+}
+
+.cart-container {
+    display: flex;
+    align-items: flex-end;
+    background-color: var(--UI-white);
+    margin: 1rem;
+    border-radius: .5rem;
+    min-height: 200px;
+}
+
+.cart-counter {
+    display: flex;
+    position: absolute;
+    top: -8px;
+    left: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #1B203D;
+    border: 4px solid #1B203D;
+    font-size: 0.8rem;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    padding: .25rem;
+    outline: 2px solid var(--UI-white);
+    color: var(--UI-white);
+}
+
+.cart-icon-container {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+

@@ -1,4 +1,5 @@
 import { gamesApiUrl } from "./scripts/const.mjs";
+import { addToCart, clearCart } from './scripts/utils/cart.mjs';
 import { doFetch } from "./scripts/utils/doFetch.mjs";
 
 

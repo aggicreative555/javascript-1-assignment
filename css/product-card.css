@@ -160,10 +160,11 @@ body .product-card-price > .sale-price {
 
 .breadcrumb {
     list-style: none;
+    padding: 1rem;
 }
 
 .breadcrumb a {
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: 400;
     color: var(--secondary-color)
 }
@@ -532,30 +533,11 @@ body .product-card-price > .sale-price {
     background-repeat: no-repeat;
 }
 
-
-/* <div class="product-wrapper">
-  <div class="product-container">
-    <div class="game-image"></div>
-    <div class="product-content">
-      <h3 class="product-title"></h3>
-      <h4 class="product-tags"></h4>
-      <div class="product-price">
-        <h4 class="sale"></h4>
-        <h4 class="original"></h4>
-      </div>
-    </div>
-  </div>
-</div>  */
-
 .product-wrapper {
-    width: fit-content;
-    padding: 1rem;
     margin: 1rem;
-}
-
-.product-container {
+    max-width: 300px;
+    cursor: pointer;
     display: flex;
-    width: auto;
     max-width: 363px;
     min-height: 300px;
     max-height: fit-content;
@@ -565,21 +547,26 @@ body .product-card-price > .sale-price {
     border-radius: 0.5rem;
     box-shadow: 2px 4px 4px 0px rgba(160, 163, 231, 0.5);
 
-}
-
-.product-container:hover {
-    box-shadow: 4px 6px 8px 0px rgba(160, 163, 231, 0.8);
     transition: 0.2s ease-in-out; 
 }
 
+.product-content {
+    padding: 1rem;
+}
+
+.product-wrapper:hover {
+    box-shadow: 4px 6px 8px 0px rgba(160, 163, 231, 0.8);
+    
+}
+
 .image-container {
-    max-height: 619px;
+    height: auto;
     width: 100%;
 }
 
 .game-image {
-    height: 100px;
-    width: 100px;
+    height: auto;
+    width: 100%;
     display: block;
     border-radius: 0.5rem 0.5rem  0 0;
 }
@@ -621,11 +608,11 @@ body .product-card-price > .sale-price {
     font-size: 1rem;
 }
 
-.original {
+.sale {
     font-size: 1.5rem;
 }
 
-.sale {
+.original {
     font-size: 1rem;
     text-decoration: line-through;
     color: var(--secondary-color)
@@ -634,11 +621,13 @@ body .product-card-price > .sale-price {
 /* Filter buttons */
 
 .filter-buttons {
+    padding: 1rem;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
+    flex-wrap: wrap;
     gap: 8px;
 }
 
@@ -648,6 +637,7 @@ body .product-card-price > .sale-price {
 
 .filter-btn {
     font-size: 0.8rem;
+    color:#1B203D;
     font-weight: 500;
     padding: 0.5rem;
     min-width: 100px;
@@ -668,4 +658,12 @@ body .product-card-price > .sale-price {
     pointer-events: none; 
     background-color: #1B203D;
     color: var(--UI-white);
+}
+
+.game-list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }

@@ -211,6 +211,7 @@ h1 {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    padding-bottom: 2rem;
 }
 
 h1 .alt-text-color {
@@ -253,27 +254,9 @@ p {
 
 /* SECTIONS */
 
-
-.content-container {
-    margin:2rem 1rem;
-    width:100%;
+.padding {
+    padding: 2rem;
 }
-
-
-body .section h1 {
-    text-wrap: wrap;
-    margin: 1rem auto;
-}
-
-.section {
-    margin: 2rem auto;
-}
-
-.section a {
-    text-decoration: none;
-}
-
-
 
 /* HEADER & NAV */
 
@@ -396,32 +379,24 @@ button, .cart {
 
     /* NEW RELEASES */
 
-body .button-wrapper {
+body .button-wrapper a{
+    width:100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width:100%;
-}
-
-body .button-wrapper a {
-    width:100%;
 }
 
 body .button-container-L {
     display: flex;
-    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin:0;
     padding:1rem;
-    min-height:156px;
-    max-width: 1207px;
-    border: 0;
-    border-radius:12px ;
+    height: 200px;
+    width:100%;
+    border-radius:12px;
     background-image: var(--category-bg,none);
     background-size: cover;
+    object-fit: contain;
     background-position: 50% 40%;
     background-repeat: none;
     cursor:pointer;

@@ -252,7 +252,6 @@
 
 .radio-container {
     display: flex;
-    flex: row;
     align-items: flex-start;
     gap: 16px;
 }
@@ -352,7 +351,8 @@
 
 .cart-container {
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
     background-color: var(--UI-white);
     margin: 1rem;
     border-radius: .5rem;

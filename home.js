@@ -4,7 +4,7 @@ import { doFetch } from "./scripts/utils/doFetch.mjs";
 
 function generateGameHtml(game) {
 
-    const gameWrapper = document.createElement('div');
+    const gameWrapper = document.createElement('a');
     gameWrapper.classList.add('product-wrapper');
 
     const imageContainer = document.createElement('div');

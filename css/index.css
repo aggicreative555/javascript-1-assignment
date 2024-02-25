@@ -68,12 +68,8 @@ p {
     overflow-wrap: break-word;
 }
 
-main {
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
+a {
+    text-decoration: none;
 }
 
 /* CSS RESET */
@@ -339,7 +335,11 @@ button {
     cursor: pointer;
 }
 
-.btn-cta {
+.btn-cta,
+.add-to-cart-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0.5rem;
     padding: 1rem 1rem;
     border-radius: 0.5rem;
@@ -351,6 +351,14 @@ button {
     text-align: center;
     font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;
+    transition: .2s ease-in-out;
+}
+
+.btn-cta:hover,
+.add-to-cart-btn:hover {
+    background-color:#1B203D;
+    color: rgb(196, 197, 230);
+    box-shadow: 4px 4px 6px 0px rgba(160, 163, 231, 0.8);
 }
 
 .btn-cta a {

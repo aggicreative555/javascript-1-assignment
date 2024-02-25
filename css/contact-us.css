@@ -25,7 +25,6 @@ input, textarea, #subtopic, #maintopic {
     padding: 1rem 1.5rem;
     margin:0.5rem 0;
     width:100%;
-    text-wrap:wrap;
 }
 
 textarea {
@@ -60,8 +59,7 @@ textarea {
 
 .form-container label {
     font-size: 1rem;
-    color: var(--main-text-color:#212121;);
-    font-style: normal;
+    color: var(--primary-color, #1B203D);
 }
 
 #uppercase {

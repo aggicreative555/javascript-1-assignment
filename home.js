@@ -83,18 +83,24 @@ function displayGames(games) {
 }
 
 const filterList = document.querySelector('.filter-buttons');
-const filterButtons = filterList.querySelectorAll('.filter-btn');
 const games = document.querySelectorAll('.product-container');
 
 
-filterButtons.forEach((button) => {
-    button.addEventListener('click' , (e) => {
-        const filter = e.target.getAttribute('data-filter');
+if (filterList) {
+    const filterButtons = filterList.querySelectorAll('.filter-btn');
 
-        updateActiveButton(e.target);
-        filterGames(filter);
+    filterButtons.forEach((button) => {
+        button.addEventListener('click', (e) => {
+            const filter = e.target.getAttribute('data-filter');
+
+            updateActiveButton(e.target);
+            filterGames(filter);
+        });
     });
-});
+} else {
+    console.log('filterList is null. No filter buttons found.');
+}
+
 
 async function filterGames(genre) {
     try {
@@ -131,11 +137,15 @@ function updateActiveButton(newButton) {
     newButton.classList.add('active');
 }
 
-
 const clearCartButton = document.getElementById('clear-cart');
-clearCartButton.addEventListener('click', () => {
-  clearCart();
-});
+if (clearCartButton) {
+  clearCartButton.addEventListener('click', () => {
+    clearCart();
+  });
+} else {
+  console.log("Clear cart button not found.");
+}
+
 
 function createCart() {
     const cart = localStorage.getItem('cart');

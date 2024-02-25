@@ -22,11 +22,9 @@
 .dropdown-title {
     display:flex;
     align-items: center;
-    justify-items: space-between;
     width:100%;
     font-size: 1.25rem;
     font-weight: bolder;
-    color: var(main-text-color);
     padding: 1rem 0 1rem 0;
 }
 
@@ -43,14 +41,12 @@
 .dropdown-section li {
     display:block;
     list-style:none;
-    margin:none;
     padding: 0.5rem 0 0.5rem 0;
 }
 
 .dropdown-section li a {
     margin:0;
     font-size:1rem;
-    font-weight: medium;
     color: var(--secondary-color);    
 }
 

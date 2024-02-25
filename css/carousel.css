@@ -19,13 +19,11 @@ body .slider {
     overflow-x: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    /* animation: slide 40s ease-in infinite; */
 }
 
 
 body .slider img {
     flex: 0 0 100%;
-    scroll-snap-type: start;
     scroll-snap-align: start;
     object-fit: cover;
     object-position: center center;

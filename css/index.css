@@ -264,7 +264,6 @@ header {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed relative;
     color:#212121;
     background: var(--UI-white);
     padding: 1rem;
@@ -398,7 +397,6 @@ body .button-container-L {
     background-size: cover;
     object-fit: contain;
     background-position: 50% 40%;
-    background-repeat: none;
     cursor:pointer;
     box-shadow: var(--drop-shadow-card);
     overflow: hidden;
@@ -456,14 +454,12 @@ body .button-container-square {
     min-height:171px;
     min-width: 171px;
     max-width:332px;
-    max-height:auto;
     aspect-ratio: 1/1;
     border:0;
     border-radius:12px ;
     background-image: var(--category-bg,none);
     background-size: cover;
     background-position: center;
-    background-repeat: none;
     cursor:pointer;
     box-shadow: var(--drop-shadow-card);
 }
@@ -529,7 +525,6 @@ summary.title-container-button-accordion::marker {
     background-image: var(--category-bg,none);
     background-size: cover;
     background-position: center center;
-    background-repeat: none;
 }
 
 /* DESCRIPTION */

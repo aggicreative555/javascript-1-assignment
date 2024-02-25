@@ -11,6 +11,9 @@
       <link rel="icon" href="../assets/favicon/favicon.svg" type="image/svg+xml">
       <link rel="apple-touch-icon" href="../assets/favicon/apple-touch-icon.png"><!-- 180×180 -->
       <link rel="manifest" href="../assets/favicon/site.webmanifest">
+
+      <!-- Script -->
+      <script type="module" src="../cart/index.mjs"></script>
       
 
       <!--CSS-->
@@ -105,204 +108,27 @@
 
       <!-- RIGHT SIDE -->
       <div class="header-right">
-        <div class="cart-container">
-          <button class="cart">
-            <span class="material-symbols-outlined" aria-label="Empty shopping cart">
-              shopping_cart
-            </span>
-          </button>
-        </div>
-        <a href="#" class="show-on-desktop">Cart</a>
-        <button class="btn-cta show-on-desktop"><a href="#">Login</a>
-        </button>
+        <a href="./cart/cart.html" class="cart-icon-container">
+          <span class="material-symbols-outlined" aria-label="Empty shopping cart">
+          shopping_cart
+          </span>
+          <span class="cart-counter" id="cart-counter"></span>
+        </a>
+        <button class="btn-cta show-on-desktop"><a href="#">Login</a></button>
       </div>
       <!-- RIGHT SIDE -->
     </header>
     <!-- NAV -->
 
-    <main class="cart">
-      <div class="container-cart-page">
-        <div class="section">
-
-          <div class="cart-card-container">
-            <div class="top-section-cart-container">
-              <span class="material-symbols-outlined">
-                deployed_code
-              </span>
-              <span class="ship-to-home">Ship To Home</span>
-              <span class="caption-S ship-to-home"> 1 Item </span>
-            </div>
-
-            <div class="main-content-cart-container">
-              <div class="image-description">
-                <div class="game-img-container cart">
-                  <div class="accordion-game-img" data-category="forgelegends">
-                  </div>
-                </div>
-
-                  <!-- DESCRIPTION -->
-                <div class="description-cart">
-                  <div class="top-cart-description-section">
-                    <div class="title-cart">
-                      <span class="cart-title">Forge Legend</span>
-                      <span class="caption-S cart-title">Playbox One X Enchanced</span>
-                      <div class="edition-caption">
-                        <span class="caption-XS" id="colon">Edition</span><span class="caption-XS">Standard</span>
-                      </div>
-                    </div>
-                    <div class="links-cart">
-                      <div class="icon-link-group">
-                        <div class="centered-container">
-                          <span class="material-symbols-outlined" style="font-size: 1rem;">
-                            <style>
-                              .material-symbols-outlined {
-                                font-variation-settings:
-                                'FILL' 1
-                              }
-                              </style>
-                            favorite
-                          </span>
-                          <span class="link">Save for later</span>
-                        </div>
-                      </div>
-                      <span class="link" style="padding-left: 1rem;">Remove</span>
-                    </div>
-                  </div>
-                  <div class="button-add-to-cart">
-                    <div class="button-container-cart">
-                      <div class="icon-button">
-                        <span class="material-symbols-outlined">
-                          add
-                        </span>
-                      </div>
-                      <div class="center-section-container">
-                        <span>0</span>
-                      </div>
-                      <div class="icon-button">
-                        <span class="material-symbols-outlined">
-                        remove
-                        </span>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- DECRIPTION -->
-              <!-- SHIPPING -->
-              <div class="radio-button-group">
-                <form>
-                  <!-- RADIO 1 -->
-                  <div class="radio-1">
-                    <label for="free-shipping">
-                      <div class="radio-container">
-                        <div class="radio-button">
-                          <input type="radio" id="free-shipping" name="radioGroup" value="Free shipping">
-                        </div>
-                        <div class="title-radio-button">
-                          <span class="uppercase">Free shipping</span>
-                          <span class="caption-S">Over 799 NOK</span>
-                          <div class="caption-radio-button">
-                            <span class="caption-S">3-7 Days</span>
-                          </div>
-                        </div>
-                        
-                      </div>
-                      
-                    </label>
-                  </div>
-
-                  <!-- RADIO 2 -->
-                  <div class="radio-2">
-                    <label for="deliver-today">
-                      <div class="radio-container">
-                        <div class="radio-button">
-                          <input type="radio" id="deliver-today" name="radioGroup" value="Deliver Today">
-                        </div>
-                        <div class="title-radio-button">
-                          <span class="uppercase">Deliver Today</span>
-                          <span class="caption-S">DHL Express Shipping</span>
-                          <div class="caption-radio-button">
-                            <span class="link">Check availability</span>
-                          </div>
-                        </div>
-                        
-                      </div>
-                      
-                    </label>
-                  </div>
-
-                    <!-- RADIO 3 -->
-                    <div class="radio-3">
-                      <label for="instore-pickup">
-                        <div class="radio-container">
-                          <div class="radio-button">
-                            <input type="radio" id="instore-pickup" name="radioGroup" value="In-Store Pickup">
-                          </div>
-                          <div class="title-radio-button">
-                            <span class="uppercase">In-Store Pickup</span>
-                            <div class="caption-radio-button">
-                              <span class="material-symbols-outlined" style="font-size: 1rem; color: #258503; ">circle</span><span class="green-text radio">20+ In Stock</span>
-                              <span>at GameHub Bergen</span>
-                            </div>
-                            <span class="link">Change Locations</span>
-                          </div>
-                          
-                        </div>
-                        
-                      </label>
-                    </div>
-                </form>
-
-              </div>
-              
-           <div>
-          </div>
-
-         </div>
-        <div class="section">
-          <div class="accordion-button-">
-            <div class="accordion-button-container">
-              <details class="accordion-button">
-                <!-- TITLE + ICON-->
-                <summary class="title-container-button-accordion">
-                  <span class="accordion-title">Order Summary</span>
-                </summary>
-                <div class="accordion-button-details-container">
-                  <div class="summary-description-wrapper">
-
-                    <div class="subtotal-shipping">
-                      <div class="caption-price">
-                        <span class="">Subtotal (1 item)</span>
-                        <span class="">799,-</span>
-                        
-                      </div>
-                      <div class="caption-price">
-                        <span class="">Pick up In-store</span>
-                        <span class="">0,-</span>
-
-                      </div>
-
-                    </div>
-
-                    <div class="total-price">
-                      <span class="accordion-title">Total</span>
-                      <span class="accordion-title">799 NOK</span>
-
-                    </div>
-                  </div>
-
-                </div>
-              </details>
-            </div>
-
-          </div>
-
+    <main>
+      <div class="cart-container">
+        <div class="cart-items-display" id="cart-items-display">
         </div>
-      </div>
-
-
-
+        <button class="btn-cta small" id="clear-cart">Clear Cart</button>
+      </div>  
+      <a href="../products/product-list.html" class="btn-cta secondary">Continue Shopping</a>
+        <a type="submit" href="./checkout-success/checkout-success.html" class="btn-cta" id="clear-cart">Checkout<span class="material-symbols-outlined">arrow_forward</span>
+        </a>
     </main>
 
     <!--FOOTER TOP SECTION-->

@@ -5,6 +5,13 @@ getTotalNumberOfItemsInCart,
 removeFromCart,
 } from '../scripts/utils/cart.mjs';
 import { formatCurrency } from '../scripts/utils/formatCurrency.mjs';
+
+const clearCartButton = document.getElementById('clear-cart');
+clearCartButton.addEventListener('click', () => {
+    clearCart();
+    renderCheckoutPage();
+});
+  
 function generateHtmlForGame(game) {
     const gameWrapper = document.createElement('div');
     gameWrapper.classList.add('cart-product-container');
@@ -76,6 +83,14 @@ function displayCartItems() {
         return null;
     }
 }
+
+function displayCartCounter() {
+    const cartCounterContainer = document.getElementById('cart-counter');
+    console.log(cartCounterContainer);
+    const totalNumberOfItems = getTotalNumberOfItemsInCart();
+    cartCounterContainer.textContent = totalNumberOfItems;
+}
+
 function renderCheckoutPage() {
     displayCartItems();
     displayCartCounter();
